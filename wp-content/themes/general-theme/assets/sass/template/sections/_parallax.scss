@@ -1,0 +1,254 @@
+/* Service Card ---------------------------------- */
+@import "../../base/variable";
+@import "../../base/mixin";
+.service-bg-area {
+    margin-top: -45px;
+    background-attachment: fixed !important;
+    margin-bottom: -15px;
+}
+@include hd {
+    .sec-shape-bottom,
+    .sec-shape-top {
+        transform: translateY(-1px);
+        img {
+            width: 100%;
+        }
+    }
+    .sec-shape-bottom {
+        transform: translateY(1px);
+    }
+    .service-bg-area {
+        margin-top: -60px;
+        margin-bottom: -20px;
+    }
+}
+@media (max-width:1600px) {
+    .service-slider-1 {
+        max-width: 1438px;
+    }
+}
+@include xxl {
+    .service-slider-1 {
+        max-width: 1358px;
+    }
+} 
+@include ml {
+    .service-slider-1 {
+        max-width: 1285px;
+        margin: 0 -38px 0 auto;
+    }
+}
+@include xs {
+    .service-bg-area {
+        margin-top: -12px;
+        margin-bottom: -6px;
+    }
+    .sec-shape-bottom {
+        margin-top: -5px;
+    }
+}
+@include vxs {
+    .service-bg-area {
+        margin-top: -10px;
+        margin-bottom: -4px;
+        .sec-shape-top {
+            transform: translateY(-2px);
+        }
+        .sec-shape-bottom {
+            margin-top: -10px;
+            transform: translateY(2px);
+        }
+    }
+}
+@media (max-width: 320px) {
+    .service-bg-area .sec-shape-top {
+        transform: translateY(-4px);
+        margin-bottom: -5px;
+    }
+    .service-bg-area .sec-shape-bottom {
+        margin-top: -12px;
+        transform: translateY(3px);
+    }
+}
+/*******body mass index*******/
+.service-bg2-area {
+    margin-top: -120px;
+    padding-top: 120px;
+}
+.sec-shape2-bottom {
+    margin-bottom: -116px;
+    img {
+        width: 100%;
+    }
+}
+.bmi-table {
+    --border-color: #2D2D2D;
+    table {
+        border-color: $border-color;
+        margin-bottom: 0;
+    }
+    thead {
+        th {
+            font-size: 16px;
+            font-weight: 600;
+            font-family: $title-font;
+            color: $white-color;
+            padding-left: 30px;
+            line-height: 33px;
+            ~ th {
+                padding-left: 40px;
+            }
+        }
+    }
+    tbody {
+        th {
+            color: $body-color;
+            padding-left: 30px;
+            line-height: 33px;
+        }
+        td {
+            color: $body-color;
+            padding-left: 40px;
+            line-height: 33px;
+        }
+    }
+}
+.bmi-calculator-form {
+    background: $title-color;
+    border: 1px solid #2D2D2D;
+    box-shadow: 0px 7px 78px rgba(0, 0, 0, 0.18);
+    padding: 60px;
+    .form-title {
+        color: $white-color;
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 32px;
+        text-transform: uppercase;
+        margin-top: -0.35em;
+    }
+    .btn {
+        display: inline-block;
+        padding: 0;
+        input {
+            background: transparent;
+            color: $white-color;
+            padding: 16px 34px 18px;
+            font-weight: 500;
+        }
+        &:hover {
+            input {
+                color: $title-color;
+            }
+        }
+    }
+}
+@include hd {
+    .sec-shape2-bottom {
+        margin-bottom: -154px;
+        transform: translate(0px, 1px);
+    }
+}
+@media (max-width: 1600px) {
+    .sec-shape2-bottom {
+        margin-bottom: -96px;
+    }
+}
+@include xxl {
+    .sec-shape2-bottom {
+        margin-bottom: -87px;
+    }
+}
+@include ml {
+    .sec-shape2-bottom {
+        margin-bottom: -82px;
+    }
+}
+@include xl {
+    .sec-shape2-bottom {
+        margin-bottom: -73px;
+    }   
+}
+@include lg {
+    .sec-shape2-bottom {
+        margin-bottom: -62px;
+    }
+}
+@include md {
+    .sec-shape2-bottom {
+        margin-bottom: -47px;
+    }
+}
+@include sm {
+    .sec-shape2-bottom {
+        margin-bottom: -36px;
+    }
+}
+@include xs {
+    .sec-shape2-bottom {
+        margin-bottom: -26px;
+    }
+    .bmi-calculator-form {
+        padding: 40px;
+    }
+}
+@include vxs {
+    .sec-shape2-bottom {
+        margin-bottom: -23px;
+    }
+}
+@media (max-width: 320px) {
+    .sec-shape2-bottom {
+        margin-bottom: -20px;
+        transform: translate(0px, 1px);
+        margin-top: -6px;
+    }
+    .bmi-table tbody td,
+    .bmi-table thead th ~ th {
+        padding-left: 20px;
+    }
+}
+/****service details page****/
+.service-page-single {
+    .page-img {
+        border-radius: 20px;
+        img {
+            border-radius: 20px;
+        }
+    }
+    .service-wrap {
+        background: #FFFFFF;
+        border: 1px solid rgba(237, 237, 237, 0.89);
+        box-shadow: 0px 16px 51px rgba(0, 0, 0, 0.07);
+        border-radius: 15px;
+        padding: 40px;
+        h6 {
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: -0.4em;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: -0.4em;
+        }
+    }
+    .service-page-list {
+        border-radius: 20px;
+        padding: 53px 60px;
+        margin-top: 20px;
+        li {
+            color: $white-color;
+            margin-bottom: 10px;
+            i {
+                color: $white-color;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+@include xl {
+    .service-page-single .service-wrap {
+        padding: 30px;
+    } 
+}

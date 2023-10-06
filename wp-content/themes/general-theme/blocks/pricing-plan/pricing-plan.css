@@ -1,0 +1,185 @@
+:root {
+  --theme-color: #F41E1E;
+  --title-color: #1C1C1C;
+  --body-color: #7B7E86;
+  --smoke-color: #F3F3F3;
+  --smoke-color2: #F6F6F7;
+  --smoke-color3: #F5F5F6;
+  --smoke-color4: #F4F4F4;
+  --smoke-color5: #F0F2F4;
+  --black-color: #202020;
+  --gray-color: #303030;
+  --white-color: #ffffff;
+  --light-color: #9fa2ad;
+  --yellow-color: #FFB539;
+  --success-color: #28a745;
+  --error-color: #dc3545;
+  --border-color: #E3E3E3;
+  --title-font: "Kanit", sans-serif;
+  --body-font: "Kumbh Sans", sans-serif;
+  --icon-font: "Font Awesome 6 Pro";
+  --main-container: 1220px;
+  --container-gutters: 24px;
+  --section-space: 120px;
+  --section-space-mobile: 80px;
+  --section-title-space: 60px;
+  --ripple-ani-duration: 5s;
+}
+
+.pricing-card {
+  background: var(--smoke-color2);
+  border-radius: 15px;
+  padding: 0 40px 50px;
+  margin-top: 66px;
+  position: relative;
+  z-index: 0;
+}
+.pricing-card_bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.4s;
+}
+.pricing-card_bg img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+.pricing-card_icon {
+  display: inline-block;
+  height: 141px;
+  width: 134px;
+  line-height: 134px;
+  transform: translateY(-66px);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -46px;
+}
+.pricing-card_icon:before, .pricing-card_icon:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: transparent;
+  width: 141px;
+  height: 134px;
+  z-index: -1;
+  transform: skewX(-10deg);
+  border-radius: 15px;
+}
+.pricing-card_icon:after {
+  background: var(--theme-color);
+  width: 115px;
+  height: 110px;
+  top: 11px;
+  left: 13px;
+}
+.pricing-card_icon img {
+  transition: 0.4s;
+}
+.pricing-card_title {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 7px;
+  transition: 0.4s;
+}
+.pricing-card_price {
+  font-size: 72px;
+  font-weight: 500;
+  color: var(--theme-color);
+  border-bottom: 1px solid #E2E2E4;
+  padding-bottom: 18px;
+  transition: 0.4s;
+  margin-bottom: 22px;
+}
+.pricing-card_price .currency {
+  font-size: 24px;
+  position: relative;
+  top: -30px;
+  margin-right: 6px;
+  display: inline-block;
+}
+.pricing-card_price .duration {
+  font-size: 16px;
+  font-weight: 400;
+}
+.pricing-card_content {
+  margin-bottom: 27px;
+}
+.pricing-card .checklist {
+  margin-bottom: 35px;
+}
+.pricing-card .checklist li {
+  font-size: 16px;
+  color: var(--body-color);
+  font-weight: 400;
+}
+.pricing-card .checklist li:not(:last-child) {
+  margin-bottom: 7px;
+}
+.pricing-card .checklist li i, .pricing-card .checklist li svg {
+  color: var(--body-color);
+}
+.pricing-card.pricing-card_active .pricing-card_bg, .pricing-card:hover .pricing-card_bg {
+  opacity: 1;
+}
+.pricing-card.pricing-card_active .pricing-card_icon:before, .pricing-card:hover .pricing-card_icon:before {
+  background: var(--white-color);
+}
+.pricing-card.pricing-card_active .pricing-card_icon img, .pricing-card:hover .pricing-card_icon img {
+  transform: rotateY(180deg);
+}
+.pricing-card.pricing-card_active .pricing-card_title, .pricing-card:hover .pricing-card_title {
+  color: var(--white-color);
+}
+.pricing-card.pricing-card_active .pricing-card_price, .pricing-card:hover .pricing-card_price {
+  color: var(--white-color);
+  border-color: #2E2E2E;
+}
+
+/* Medium Large devices */
+@media (max-width: 1399px) {
+  .pricing-card {
+    padding: 0 30px 40px;
+  }
+  .pricing-card_price {
+    font-size: 60px;
+  }
+}
+/* Large devices */
+@media (max-width: 1199px) {
+  .pricing-card_title {
+    font-size: 24px;
+  }
+  .pricing-card_price {
+    font-size: 50px;
+  }
+  .pricing-card_price .currency {
+    top: -15px;
+  }
+  .pricing-card {
+    margin-top: 56px;
+  }
+  .pricing-card_icon {
+    height: 121px;
+    width: 114px;
+    line-height: 112px;
+    transform: translateY(-56px);
+    margin-bottom: -36px;
+  }
+  .pricing-card_icon:before {
+    width: 121px;
+    height: 114px;
+  }
+  .pricing-card_icon:after {
+    width: 95px;
+    height: 90px;
+  }
+}

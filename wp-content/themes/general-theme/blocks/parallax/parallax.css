@@ -1,0 +1,294 @@
+/* Service Card ---------------------------------- */
+:root {
+  --theme-color: #F41E1E;
+  --title-color: #1C1C1C;
+  --body-color: #7B7E86;
+  --smoke-color: #F3F3F3;
+  --smoke-color2: #F6F6F7;
+  --smoke-color3: #F5F5F6;
+  --smoke-color4: #F4F4F4;
+  --smoke-color5: #F0F2F4;
+  --black-color: #202020;
+  --gray-color: #303030;
+  --white-color: #ffffff;
+  --light-color: #9fa2ad;
+  --yellow-color: #FFB539;
+  --success-color: #28a745;
+  --error-color: #dc3545;
+  --border-color: #E3E3E3;
+  --title-font: "Kanit", sans-serif;
+  --body-font: "Kumbh Sans", sans-serif;
+  --icon-font: "Font Awesome 6 Pro";
+  --main-container: 1220px;
+  --container-gutters: 24px;
+  --section-space: 120px;
+  --section-space-mobile: 80px;
+  --section-title-space: 60px;
+  --ripple-ani-duration: 5s;
+}
+
+.service-bg-area {
+  margin-top: -45px;
+  background-attachment: fixed !important;
+  margin-bottom: -15px;
+}
+
+/* Hight Resoulation devices */
+@media (min-width: 1922px) {
+  .sec-shape-bottom,
+  .sec-shape-top {
+    transform: translateY(-1px);
+  }
+  .sec-shape-bottom img,
+  .sec-shape-top img {
+    width: 100%;
+  }
+  .sec-shape-bottom {
+    transform: translateY(1px);
+  }
+  .service-bg-area {
+    margin-top: -60px;
+    margin-bottom: -20px;
+  }
+}
+@media (max-width: 1600px) {
+  .service-slider-1 {
+    max-width: 1438px;
+  }
+}
+/* Extra large devices */
+@media (max-width: 1500px) {
+  .service-slider-1 {
+    max-width: 1358px;
+  }
+}
+/* Medium Large devices */
+@media (max-width: 1399px) {
+  .service-slider-1 {
+    max-width: 1285px;
+    margin: 0 -38px 0 auto;
+  }
+}
+/* Extra small devices */
+@media (max-width: 575px) {
+  .service-bg-area {
+    margin-top: -12px;
+    margin-bottom: -6px;
+  }
+  .sec-shape-bottom {
+    margin-top: -5px;
+  }
+}
+/* Extra small devices */
+@media (max-width: 375px) {
+  .service-bg-area {
+    margin-top: -10px;
+    margin-bottom: -4px;
+  }
+  .service-bg-area .sec-shape-top {
+    transform: translateY(-2px);
+  }
+  .service-bg-area .sec-shape-bottom {
+    margin-top: -10px;
+    transform: translateY(2px);
+  }
+}
+@media (max-width: 320px) {
+  .service-bg-area .sec-shape-top {
+    transform: translateY(-4px);
+    margin-bottom: -5px;
+  }
+  .service-bg-area .sec-shape-bottom {
+    margin-top: -12px;
+    transform: translateY(3px);
+  }
+}
+/*******body mass index*******/
+.service-bg2-area {
+  margin-top: -120px;
+  padding-top: 120px;
+}
+
+.sec-shape2-bottom {
+  margin-bottom: -116px;
+}
+.sec-shape2-bottom img {
+  width: 100%;
+}
+
+.bmi-table {
+  --border-color: #2D2D2D;
+}
+.bmi-table table {
+  border-color: var(--border-color);
+  margin-bottom: 0;
+}
+.bmi-table thead th {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--title-font);
+  color: var(--white-color);
+  padding-left: 30px;
+  line-height: 33px;
+}
+.bmi-table thead th ~ th {
+  padding-left: 40px;
+}
+.bmi-table tbody th {
+  color: var(--body-color);
+  padding-left: 30px;
+  line-height: 33px;
+}
+.bmi-table tbody td {
+  color: var(--body-color);
+  padding-left: 40px;
+  line-height: 33px;
+}
+
+.bmi-calculator-form {
+  background: var(--title-color);
+  border: 1px solid #2D2D2D;
+  box-shadow: 0px 7px 78px rgba(0, 0, 0, 0.18);
+  padding: 60px;
+}
+.bmi-calculator-form .form-title {
+  color: var(--white-color);
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  margin-top: -0.35em;
+}
+.bmi-calculator-form .btn {
+  display: inline-block;
+  padding: 0;
+}
+.bmi-calculator-form .btn input {
+  background: transparent;
+  color: var(--white-color);
+  padding: 16px 34px 18px;
+  font-weight: 500;
+}
+.bmi-calculator-form .btn:hover input {
+  color: var(--title-color);
+}
+
+/* Hight Resoulation devices */
+@media (min-width: 1922px) {
+  .sec-shape2-bottom {
+    margin-bottom: -154px;
+    transform: translate(0px, 1px);
+  }
+}
+@media (max-width: 1600px) {
+  .sec-shape2-bottom {
+    margin-bottom: -96px;
+  }
+}
+/* Extra large devices */
+@media (max-width: 1500px) {
+  .sec-shape2-bottom {
+    margin-bottom: -87px;
+  }
+}
+/* Medium Large devices */
+@media (max-width: 1399px) {
+  .sec-shape2-bottom {
+    margin-bottom: -82px;
+  }
+}
+/* Medium Large devices */
+@media (max-width: 1299px) {
+  .sec-shape2-bottom {
+    margin-bottom: -73px;
+  }
+}
+/* Large devices */
+@media (max-width: 1199px) {
+  .sec-shape2-bottom {
+    margin-bottom: -62px;
+  }
+}
+/* Medium devices */
+@media (max-width: 991px) {
+  .sec-shape2-bottom {
+    margin-bottom: -47px;
+  }
+}
+/* Small devices */
+@media (max-width: 767px) {
+  .sec-shape2-bottom {
+    margin-bottom: -36px;
+  }
+}
+/* Extra small devices */
+@media (max-width: 575px) {
+  .sec-shape2-bottom {
+    margin-bottom: -26px;
+  }
+  .bmi-calculator-form {
+    padding: 40px;
+  }
+}
+/* Extra small devices */
+@media (max-width: 375px) {
+  .sec-shape2-bottom {
+    margin-bottom: -23px;
+  }
+}
+@media (max-width: 320px) {
+  .sec-shape2-bottom {
+    margin-bottom: -20px;
+    transform: translate(0px, 1px);
+    margin-top: -6px;
+  }
+  .bmi-table tbody td,
+  .bmi-table thead th ~ th {
+    padding-left: 20px;
+  }
+}
+/****service details page****/
+.service-page-single .page-img {
+  border-radius: 20px;
+}
+.service-page-single .page-img img {
+  border-radius: 20px;
+}
+.service-page-single .service-wrap {
+  background: #FFFFFF;
+  border: 1px solid rgba(237, 237, 237, 0.89);
+  box-shadow: 0px 16px 51px rgba(0, 0, 0, 0.07);
+  border-radius: 15px;
+  padding: 40px;
+}
+.service-page-single .service-wrap h6 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: -0.4em;
+  margin-bottom: 10px;
+}
+.service-page-single .service-wrap p {
+  margin-bottom: -0.4em;
+}
+.service-page-single .service-page-list {
+  border-radius: 20px;
+  padding: 53px 60px;
+  margin-top: 20px;
+}
+.service-page-single .service-page-list li {
+  color: var(--white-color);
+  margin-bottom: 10px;
+}
+.service-page-single .service-page-list li i {
+  color: var(--white-color);
+}
+.service-page-single .service-page-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* Medium Large devices */
+@media (max-width: 1299px) {
+  .service-page-single .service-wrap {
+    padding: 30px;
+  }
+}

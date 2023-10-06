@@ -72,5 +72,5 @@ Thumbs.db
 !site.webmanifest
 # track these mu-plugins, plugins, and themes
 # add your own entries here
-!wp-content/themes/sodeli-theme/
+!wp-content/themes/general-theme/
 !bitbucket-pipelines.yml

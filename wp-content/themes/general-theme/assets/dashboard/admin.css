@@ -1,0 +1,84 @@
+/**
+    Change left sidebar width
+ */
+
+/*.interface-interface-skeleton__body .interface-navigable-region,*/
+.interface-interface-skeleton__body .interface-interface-skeleton__sidebar {
+    width: 25% !important;
+}
+
+.interface-interface-skeleton__body .interface-interface-skeleton__sidebar .interface-complementary-area {
+    width: 100% !important;
+}
+
+/** ================================
+   css for custom button in rich text editor
+ */
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+.btn:focus, .btn:hover {
+    text-decoration: none
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
+}
+
+.btn.disabled, .btn:disabled {
+    opacity: .65
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer
+}
+
+.btn:not(:disabled):not(.disabled).active, .btn:not(:disabled):not(.disabled):active {
+    background-image: none
+}
+
+a.btn.disabled, fieldset:disabled a.btn {
+    pointer-events: none
+}
+
+.btn {
+    background: #762E19;
+    border-radius: 5px;
+    color: #fff !important;
+    font-weight: 500;
+    transition: all 0.3s;
+    max-width: 166px;
+    width: 100%;
+    padding: 16px;
+    line-height: 1;
+}
+
+.service-bg-area {
+    padding: inherit;
+    background-color: #bebbbb;
+}
+
+/** block shadow */
+.acf-block-component, .acf-block-body {
+    box-shadow: 1px 3px 15px 3px rgba(0,0,0,0.37);
+    -webkit-box-shadow: 1px 3px 15px 3px rgba(0,0,0,0.37);
+    -moz-box-shadow: 1px 3px 15px 3px rgba(0,0,0,0.37);
+    border-bottom: #a4a2a2 1px solid;
+    margin-bottom: 30px;
+}
