@@ -1,0 +1,132 @@
+********************************************************************************
+********************************************************************************
+DUPLICATOR PRO PACKAGE-LOG: 2023-10-06 18:33:22
+NOTICE: Do NOT post to public sites or forums 
+PACKAGE CREATION START
+********************************************************************************
+********************************************************************************
+VERSION:	4.0.5
+WORDPRESS:	6.3.1
+PHP INFO:	8.1.24 | SAPI: apache2handler
+SERVER:		Apache/2.4.35 (Win64) OpenSSL/1.1.1t PHP/8.1.24 
+ARCHITECTURE:	64-bit 
+CLIENT KICKOFF: off 
+PHP TIME LIMIT: [7200] not allowed 
+PHP MAX MEMORY: 4294967296 (512M default) 
+RUN TYPE:	Manual
+MEMORY STACK:	52MB
+ARCHIVE ENGINE: ZipArchive: multi-thread
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP + CHUNKING (query size limit - 131072 )
+
+TABLES: total: 19 | filtered:0 | create:19
+REWIND DATABASE ITERATOR
+INSERT ROWS TABLE[INDEX:0] wp_users NUM ROWS: 1
+REWIND DATABASE ITERATOR
+INSERT ROWS TABLE[INDEX:0] wp_users NUM ROWS: 1
+INSERT ROWS TABLE[INDEX:1] wp_usermeta NUM ROWS: 35
+INSERT ROWS TABLE[INDEX:2] wp_commentmeta NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:3] wp_comments NUM ROWS: 1
+INSERT ROWS TABLE[INDEX:4] wp_duplicator_pro_entities NUM ROWS: 5
+INSERT ROWS TABLE[INDEX:5] wp_duplicator_pro_packages NUM ROWS: 1
+INSERT ROWS TABLE[INDEX:6] wp_links NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:7] wp_options NUM ROWS: 238
+INSERT ROWS TABLE[INDEX:8] wp_postmeta NUM ROWS: 244
+INSERT ROWS TABLE[INDEX:9] wp_posts NUM ROWS: 354
+INSERT ROWS TABLE[INDEX:10] wp_term_relationships NUM ROWS: 12
+INSERT ROWS TABLE[INDEX:11] wp_term_taxonomy NUM ROWS: 4
+INSERT ROWS TABLE[INDEX:12] wp_termmeta NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:13] wp_terms NUM ROWS: 4
+INSERT ROWS TABLE[INDEX:14] wp_yoast_indexable NUM ROWS: 13
+INSERT ROWS TABLE[INDEX:15] wp_yoast_indexable_hierarchy NUM ROWS: 9
+INSERT ROWS TABLE[INDEX:16] wp_yoast_migrations NUM ROWS: 24
+INSERT ROWS TABLE[INDEX:17] wp_yoast_primary_term NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:18] wp_yoast_seo_links NUM ROWS: 81
+SQL FILE SIZE CHECK OK, SIZE: 1887301
+SQL CREATED: 20231006_fitnessroad_c5056d63433e6d3c4996_20231006183111_database.sql
+SQL FILE SIZE: 1.8MB
+SQL FILE TIME: 2023-10-06 18:33:25
+SQL RUNTIME: 2.853 sec.
+MEMORY STACK: 52MB
+
+********************************************************************************
+ARCHIVE Mode:ZipArchive Multi-Threaded
+********************************************************************************
+ARCHIVE DIR:  C:/laragon/www/fitnessroad
+ARCHIVE FILE: 20231006_fitnessroad_c5056d63433e6d3c4996_20231006183111_archive.zip
+COMPRESSION: *ON*
+FILTERS: *OFF*
+DIRS:  not set
+EXTS:  not set
+FILES:  not set
+----------------------------------------
+COMPRESSING
+SIZE:	861.79MB
+STATS:	Dirs 8,087 | Files 60,577 | Total 68,664
+SQL ADDED: 20231006_fitnessroad_c5056d63433e6d3c4996_20231006183111_database.sql
+ZipArchive Object
+(
+    [lastId] => 20641
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 20642
+    [filename] => C:\laragon\www\fitnessroad\wp-content\backups-dup-pro\tmp\20231006_fitnessroad_c5056d63433e6d3c4996_20231006183111_archive.zip
+    [comment] => 
+)
+
+ZipArchive Object
+(
+    [lastId] => 68663
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 68664
+    [filename] => C:\laragon\www\fitnessroad\wp-content\backups-dup-pro\tmp\20231006_fitnessroad_c5056d63433e6d3c4996_20231006183111_archive.zip
+    [comment] => 
+)
+
+COMPRESSED SIZE: 268.09MB
+ARCHIVE RUNTIME: 176.722 sec.
+MEMORY STACK: 66MB
+[PHP ERR][ISSUE] MSG:Implicit conversion from float 48.8 to int loses precision [CODE:8192|FILE:C:\laragon\www\fitnessroad\wp-content\plugins\duplicator-pro\classes\class.password.php|LINE:165]
+ARCHIVE CONSISTENCY TEST: PASS
+
+********************************************************************************
+STORAGE:
+********************************************************************************
+LOCAL: Default, C:/laragon/www/fitnessroad/wp-content/backups-dup-pro
+
+********************************************************************************
+INTEGRITY CHECKS:
+********************************************************************************
+SQL FILE: 1.8MB
+INSTALLER FILE: 76.46KB
+ARCHIVE FILE: 270.31MB 
+EXPECTED FILE/DIRECTORY COUNT: 68,664
+ACTUAL FILE/DIRECTORY COUNT: 68,664
+
+********************************************************************************
+RECORD ID:[2]
+TOTAL PROCESS RUNTIME: 187.650 sec.
+PEAK PHP MEMORY USED: 60MB
+DONE PROCESSING => 20231006_fitnessroad 2023-10-06 18:36:30
+
+-----------------------------------------
+STORAGE PROCESSING THREAD INITIATED
+** LOCAL [Name: Default] [ID: -2] **
+SUCCESS: copied to default location: C:/laragon/www/fitnessroad/wp-content/backups-dup-pro
+[PHP ERR][ISSUE] MSG:Return type of DUP_PRO_DB_Build_Iterator::rewind() should either be compatible with Iterator::rewind(): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice [CODE:8192|FILE:C:\laragon\www\fitnessroad\wp-content\plugins\duplicator-pro\classes\package\class.pack.database.build.iterator.php|LINE:227]
+-----------------------------------------
+STORAGE PROCESSING THREAD INITIATED
+STORAGE PROCESSING COMPLETED
+
+********************************************************************************
+********************************************************************************
+DUPLICATOR PRO PACKAGE CREATION OR MANUAL STORAGE TRANSFER END: 2023-10-06 18:36:31
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+********************************************************************************
+
+[PHP ERR][ISSUE] MSG:Return type of DUP_PRO_DB_Build_Iterator::rewind() should either be compatible with Iterator::rewind(): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice [CODE:8192|FILE:C:\laragon\www\fitnessroad\wp-content\plugins\duplicator-pro\classes\package\class.pack.database.build.iterator.php|LINE:227]
