@@ -35,6 +35,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&family=Kumbh+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 
+    <script>
+
+        /*---------- 06. Set Background Image ----------*/
+        if ($("[data-bg-src]").length > 0) {
+            $("[data-bg-src]").each(function () {
+                var src = $(this).attr("data-bg-src");
+                $(this).css("background-image", "url(" + src + ")");
+                $(this).removeAttr("data-bg-src").addClass("background-image");
+            });
+        }
+    </script>
 	<?php wp_head(); ?>
 </head>
 

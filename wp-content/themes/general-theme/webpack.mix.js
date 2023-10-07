@@ -17,6 +17,7 @@ mix
     .sass('assets/sass/template/breadcumb/_breadcumb-v1-1.scss', 'blocks/hero-breadcrumb/hero-breadcrumb.css') //counter area 1
     .sass('assets/sass/template/sections/_cta-1.scss', 'blocks/cta-area/cta-area.css') //counter area 1
     .sass('assets/sass/general-style.scss', 'style.css')
+    // .sass('assets/sass/general-style.scss', 'style2.css')
 
 
 
