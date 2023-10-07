@@ -182,6 +182,9 @@ function general_theme_scripts() {
 	wp_style_add_data( 'general-theme-style', 'rtl', 'replace' );
 
 
+	/** dequeue style */
+	wp_dequeue_style( 'wp-block-library' );
+
 	/** include JS file */
 	//    Slick Slider
     wp_enqueue_script( 'slick-slider', get_template_directory_uri() ."/assets/js/slick.min.js", array('jquery'), _S_VERSION, true );
