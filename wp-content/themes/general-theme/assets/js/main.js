@@ -207,7 +207,7 @@
     //     });
     // }
 
-    /*----------- 07. Global Slider ----------*/
+    /*----------- 07. Global Slider ----------*//*
     $(".global-carousel").each(function () {
         var carouselSlide = $(this);
 
@@ -361,7 +361,7 @@
             ],
         });
     });
-
+*/
     /*----------- 08. Custom Animaiton For Slider ----------*/
     $('[data-ani-duration]').each(function () {
         var durationTime = $(this).data('ani-duration');
@@ -848,12 +848,12 @@
         });
     };
 
-    if ($(".testi-slider-controller").length) {
-        $(".testi-slider-controller").defaultTab({
-            sliderTab: true,
-            tabButton: ".indicatior-btn",
-        });
-    }
+    // if ($(".testi-slider-controller").length) {
+    //     $(".testi-slider-controller").defaultTab({
+    //         sliderTab: true,
+    //         tabButton: ".indicatior-btn",
+    //     });
+    // }
 
     /*----------- 18. Shape Mockup ----------*/
     $.fn.shapeMockup = function () {

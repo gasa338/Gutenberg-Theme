@@ -212,123 +212,155 @@
   //     });
   // }
 
-  /*----------- 07. Global Slider ----------*/
-  $(".global-carousel").each(function () {
-    var carouselSlide = $(this);
-
-    // Collect Data
-    function d(data) {
-      return carouselSlide.data(data);
-    }
-
-    // Custom Arrow Button
-    var prevButton = '<button type="button" class="slick-prev"><i class="' + d("prev-arrow") + '"></i></button>',
-      nextButton = '<button type="button" class="slick-next"><i class="' + d("next-arrow") + '"></i></button>';
-
-    // Function For Custom Arrow Btn
-    $("[data-slick-next]").each(function () {
-      $(this).on("click", function (e) {
-        e.preventDefault();
-        $($(this).data("slick-next")).slick("slickNext");
-      });
-    });
-    $("[data-slick-prev]").each(function () {
-      $(this).on("click", function (e) {
-        e.preventDefault();
-        $($(this).data("slick-prev")).slick("slickPrev");
-      });
-    });
-
-    // Check for arrow wrapper
-    if (d("arrows") == true) {
-      if (!carouselSlide.closest(".arrow-wrap").length) {
-        carouselSlide.closest(".container").parent().addClass("arrow-wrap");
-      }
-    }
-    carouselSlide.slick({
-      dots: d("dots") ? true : false,
-      fade: d("fade") ? true : false,
-      arrows: d("arrows") ? true : false,
-      speed: d("speed") ? d("speed") : 1000,
-      sliderNavfor: d("slidernavfor") ? d("slidernavfor") : false,
-      autoplay: d("autoplay") == false ? false : true,
-      infinite: d("infinite") == false ? false : true,
-      slidesToShow: d("slide-show") ? d("slide-show") : 1,
-      adaptiveHeight: d("adaptive-height") ? true : false,
-      centerMode: d("center-mode") ? true : false,
-      autoplaySpeed: d("autoplay-speed") ? d("autoplay-speed") : 8000,
-      centerPadding: d("center-padding") ? d("center-padding") : "0",
-      focusOnSelect: d("focuson-select") == false ? false : true,
-      pauseOnFocus: d("pauseon-focus") ? true : false,
-      pauseOnHover: d("pauseon-hover") ? true : false,
-      variableWidth: d("variable-width") ? true : false,
-      vertical: d("vertical") ? true : false,
-      verticalSwiping: d("vertical") ? true : false,
-      prevArrow: d("prev-arrow") ? prevButton : '<button type="button" class="slick-prev"><i class="far fa-arrow-left"></i></button>',
-      nextArrow: d("next-arrow") ? nextButton : '<button type="button" class="slick-next"><i class="far fa-arrow-right"></i></button>',
-      rtl: $("html").attr("dir") == "rtl" ? true : false,
-      responsive: [{
-        breakpoint: 1600,
-        settings: {
-          arrows: d("xl-arrows") ? true : false,
-          dots: d("xl-dots") ? true : false,
-          slidesToShow: d("xl-slide-show") ? d("xl-slide-show") : d("slide-show"),
-          centerMode: d("xl-center-mode") ? true : false,
-          centerPadding: "0"
-        }
-      }, {
-        breakpoint: 1400,
-        settings: {
-          arrows: d("ml-arrows") ? true : false,
-          dots: d("ml-dots") ? true : false,
-          slidesToShow: d("ml-slide-show") ? d("ml-slide-show") : d("slide-show"),
-          centerMode: d("ml-center-mode") ? true : false,
-          centerPadding: 0
-        }
-      }, {
-        breakpoint: 1200,
-        settings: {
-          arrows: d("lg-arrows") ? true : false,
-          dots: d("lg-dots") ? true : false,
-          slidesToShow: d("lg-slide-show") ? d("lg-slide-show") : d("slide-show"),
-          centerMode: d("lg-center-mode") ? d("lg-center-mode") : false,
-          centerPadding: 0
-        }
-      }, {
-        breakpoint: 992,
-        settings: {
-          arrows: d("md-arrows") ? true : false,
-          dots: d("md-dots") ? true : false,
-          slidesToShow: d("md-slide-show") ? d("md-slide-show") : 1,
-          centerMode: d("md-center-mode") ? d("md-center-mode") : false,
-          centerPadding: 0
-        }
-      }, {
-        breakpoint: 768,
-        settings: {
-          arrows: d("sm-arrows") ? true : false,
-          dots: d("sm-dots") ? true : false,
-          slidesToShow: d("sm-slide-show") ? d("sm-slide-show") : 1,
-          centerMode: d("sm-center-mode") ? d("sm-center-mode") : false,
-          centerPadding: 0
-        }
-      }, {
-        breakpoint: 576,
-        settings: {
-          arrows: d("xs-arrows") ? true : false,
-          dots: d("xs-dots") ? true : false,
-          slidesToShow: d("xs-slide-show") ? d("xs-slide-show") : 1,
-          centerMode: d("xs-center-mode") ? d("xs-center-mode") : false,
-          centerPadding: 0
-        }
-      }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-      ]
-    });
-  });
-
+  /*----------- 07. Global Slider ----------*/ /*
+                                               $(".global-carousel").each(function () {
+                                               var carouselSlide = $(this);
+                                               // Collect Data
+                                               function d(data) {
+                                               return carouselSlide.data(data);
+                                               }
+                                               // Custom Arrow Button
+                                               var prevButton =
+                                               '<button type="button" class="slick-prev"><i class="' +
+                                               d("prev-arrow") +
+                                               '"></i></button>',
+                                               nextButton =
+                                               '<button type="button" class="slick-next"><i class="' +
+                                               d("next-arrow") +
+                                               '"></i></button>';
+                                               // Function For Custom Arrow Btn
+                                               $("[data-slick-next]").each(function () {
+                                               $(this).on("click", function (e) {
+                                               e.preventDefault();
+                                               $($(this).data("slick-next")).slick("slickNext");
+                                               });
+                                               });
+                                               $("[data-slick-prev]").each(function () {
+                                               $(this).on("click", function (e) {
+                                               e.preventDefault();
+                                               $($(this).data("slick-prev")).slick("slickPrev");
+                                               });
+                                               });
+                                               // Check for arrow wrapper
+                                               if (d("arrows") == true) {
+                                               if (!carouselSlide.closest(".arrow-wrap").length) {
+                                               carouselSlide.closest(".container").parent().addClass("arrow-wrap");
+                                               }
+                                               }
+                                               carouselSlide.slick({
+                                               dots: d("dots") ? true : false,
+                                               fade: d("fade") ? true : false,
+                                               arrows: d("arrows") ? true : false,
+                                               speed: d("speed") ? d("speed") : 1000,
+                                               sliderNavfor: d("slidernavfor") ? d("slidernavfor") : false,
+                                               autoplay: d("autoplay") == false ? false : true,
+                                               infinite: d("infinite") == false ? false : true,
+                                               slidesToShow: d("slide-show") ? d("slide-show") : 1,
+                                               adaptiveHeight: d("adaptive-height") ? true : false,
+                                               centerMode: d("center-mode") ? true : false,
+                                               autoplaySpeed: d("autoplay-speed") ? d("autoplay-speed") : 8000,
+                                               centerPadding: d("center-padding") ? d("center-padding") : "0",
+                                               focusOnSelect: d("focuson-select") == false ? false : true,
+                                               pauseOnFocus: d("pauseon-focus") ? true : false,
+                                               pauseOnHover: d("pauseon-hover") ? true : false,
+                                               variableWidth: d("variable-width") ? true : false,
+                                               vertical: d("vertical") ? true : false,
+                                               verticalSwiping: d("vertical") ? true : false,
+                                               prevArrow: d("prev-arrow")
+                                               ? prevButton
+                                               : '<button type="button" class="slick-prev"><i class="far fa-arrow-left"></i></button>',
+                                               nextArrow: d("next-arrow")
+                                               ? nextButton
+                                               : '<button type="button" class="slick-next"><i class="far fa-arrow-right"></i></button>',
+                                               rtl: $("html").attr("dir") == "rtl" ? true : false,
+                                               responsive: [
+                                               {
+                                               breakpoint: 1600,
+                                               settings: {
+                                               arrows: d("xl-arrows") ? true : false,
+                                               dots: d("xl-dots") ? true : false,
+                                               slidesToShow: d("xl-slide-show")
+                                               ? d("xl-slide-show")
+                                               : d("slide-show"),
+                                               centerMode: d("xl-center-mode") ? true : false,
+                                               centerPadding: "0",
+                                               },
+                                               },
+                                               {
+                                               breakpoint: 1400,
+                                               settings: {
+                                               arrows: d("ml-arrows") ? true : false,
+                                               dots: d("ml-dots") ? true : false,
+                                               slidesToShow: d("ml-slide-show")
+                                               ? d("ml-slide-show")
+                                               : d("slide-show"),
+                                               centerMode: d("ml-center-mode") ? true : false,
+                                               centerPadding: 0,
+                                               },
+                                               },
+                                               {
+                                               breakpoint: 1200,
+                                               settings: {
+                                               arrows: d("lg-arrows") ? true : false,
+                                               dots: d("lg-dots") ? true : false,
+                                               slidesToShow: d("lg-slide-show")
+                                               ? d("lg-slide-show")
+                                               : d("slide-show"),
+                                               centerMode: d("lg-center-mode")
+                                               ? d("lg-center-mode")
+                                               : false,
+                                               centerPadding: 0,
+                                               },
+                                               },
+                                               {
+                                               breakpoint: 992,
+                                               settings: {
+                                               arrows: d("md-arrows") ? true : false,
+                                               dots: d("md-dots") ? true : false,
+                                               slidesToShow: d("md-slide-show")
+                                               ? d("md-slide-show")
+                                               : 1,
+                                               centerMode: d("md-center-mode")
+                                               ? d("md-center-mode")
+                                               : false,
+                                               centerPadding: 0,
+                                               },
+                                               },
+                                               {
+                                               breakpoint: 768,
+                                               settings: {
+                                               arrows: d("sm-arrows") ? true : false,
+                                               dots: d("sm-dots") ? true : false,
+                                               slidesToShow: d("sm-slide-show")
+                                               ? d("sm-slide-show")
+                                               : 1,
+                                               centerMode: d("sm-center-mode")
+                                               ? d("sm-center-mode")
+                                               : false,
+                                               centerPadding: 0,
+                                               },
+                                               },
+                                               {
+                                               breakpoint: 576,
+                                               settings: {
+                                               arrows: d("xs-arrows") ? true : false,
+                                               dots: d("xs-dots") ? true : false,
+                                               slidesToShow: d("xs-slide-show")
+                                               ? d("xs-slide-show")
+                                               : 1,
+                                               centerMode: d("xs-center-mode")
+                                               ? d("xs-center-mode")
+                                               : false,
+                                               centerPadding: 0,
+                                               },
+                                               },
+                                               // You can unslick at a given breakpoint now by adding:
+                                               // settings: "unslick"
+                                               // instead of a settings object
+                                               ],
+                                               });
+                                               });
+                                               */
   /*----------- 08. Custom Animaiton For Slider ----------*/
   $('[data-ani-duration]').each(function () {
     var durationTime = $(this).data('ani-duration');
@@ -760,12 +792,12 @@
     });
   };
 
-  if ($(".testi-slider-controller").length) {
-    $(".testi-slider-controller").defaultTab({
-      sliderTab: true,
-      tabButton: ".indicatior-btn"
-    });
-  }
+  // if ($(".testi-slider-controller").length) {
+  //     $(".testi-slider-controller").defaultTab({
+  //         sliderTab: true,
+  //         tabButton: ".indicatior-btn",
+  //     });
+  // }
 
   /*----------- 18. Shape Mockup ----------*/
   $.fn.shapeMockup = function () {
@@ -1295,7 +1327,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			"blocks/about-area/about-area": 0,
 /******/ 			"blocks/feature-area/feature-area": 0,
 /******/ 			"blocks/hero-home-1/hero-section": 0,
-/******/ 			"style2": 0,
+/******/ 			"style": 0,
 /******/ 			"blocks/cta-area/cta-area": 0,
 /******/ 			"blocks/hero-breadcrumb/hero-breadcrumb": 0,
 /******/ 			"blocks/pricing-plan/pricing-plan": 0,
@@ -1352,20 +1384,20 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style2","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/js/main.js")))
-/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style2","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/sass/template/sections/_hero-1.scss")))
-/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style2","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/sass/template/sections/_feature.scss")))
-/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style2","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/sass/template/sections/_about.scss")))
-/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style2","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/sass/template/sections/_parallax.scss")))
-/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style2","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/sass/template/sections/_service-offering.scss")))
-/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style2","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/sass/template/sections/_service-provide.scss")))
-/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style2","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/sass/template/sections/_wcu-1.scss")))
-/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style2","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/sass/template/sections/_counter-1.scss")))
-/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style2","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/sass/template/sections/_testimonial-1.scss")))
-/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style2","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/sass/template/sections/_pricing-1.scss")))
-/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style2","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/sass/template/breadcumb/_breadcumb-v1-1.scss")))
-/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style2","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/sass/template/sections/_cta-1.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style2","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/sass/general-style.scss")))
+/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/js/main.js")))
+/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/sass/template/sections/_hero-1.scss")))
+/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/sass/template/sections/_feature.scss")))
+/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/sass/template/sections/_about.scss")))
+/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/sass/template/sections/_parallax.scss")))
+/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/sass/template/sections/_service-offering.scss")))
+/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/sass/template/sections/_service-provide.scss")))
+/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/sass/template/sections/_wcu-1.scss")))
+/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/sass/template/sections/_counter-1.scss")))
+/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/sass/template/sections/_testimonial-1.scss")))
+/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/sass/template/sections/_pricing-1.scss")))
+/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/sass/template/breadcumb/_breadcumb-v1-1.scss")))
+/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/sass/template/sections/_cta-1.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide"], () => (__webpack_require__("./assets/sass/general-style.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
