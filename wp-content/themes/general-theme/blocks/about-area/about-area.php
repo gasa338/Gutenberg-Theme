@@ -26,7 +26,7 @@ switch (get_field( 'about_spaces' )) {
 					<img class="about-img-1" src="<?php echo $big_image['src'] ?>" alt="<?php echo $big_image['alt'] ?>" srcset="<?php echo $big_image['srcset'] ?>">
                     <?php if ($images['small_image'] != ''):
                         $small_image = general_get_image( $images['small_image'] ); ?>
-					<img class="about-img-2 jump" src="<?php echo $small_image['src'] ?>" alt="<?php echo $small_image['alt'] ?>" srcset="<?php echo $small_image['alt'] ?>">
+					<img class="about-img-2 jump" src="<?php echo $small_image['src'] ?>" alt="<?php echo $small_image['alt'] ?>" srcset="<?php echo $small_image['srcset'] ?>">
                     <?php endif; ?>
 				</div>
 			</div>
