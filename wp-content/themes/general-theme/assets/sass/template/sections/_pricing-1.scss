@@ -1,5 +1,6 @@
 @import "../../base/variable";
 @import "../../base/mixin";
+
 .pricing-card {
     background: $smoke-color2;
     border-radius: 15px;
@@ -115,7 +116,7 @@
         }
         .pricing-card_title {
             color: $white-color;
-        } 
+        }
         .pricing-card_price {
             color: $white-color;
             border-color: #2E2E2E;

@@ -31,7 +31,7 @@ Hero Area
                                               data-ani-delay="0s"><?php echo $field['small_text']; ?></span>
 									<?php endif; ?>
                                     <h1 class="hero-title text-white" data-ani="slideinup"
-                                        data-ani-delay="0.1s">Testitam<?php echo $field['title']; ?></h1>
+                                        data-ani-delay="0.1s"><?php echo $field['title']; ?></h1>
 									<?php if ( $field['link'] ): ?>
                                         <div class="btn-group" data-ani="slideinup" data-ani-delay="0.2s">
                                             <a href="<?php echo $field['link']['url']; ?>"

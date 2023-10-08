@@ -18,7 +18,7 @@
 @import 'base/extend';
 
 /*------------------- 1.7. Wordpress Default -------------------*/
-@import 'base/wpdefault';
+//@import 'base/wpdefault';
 
 
 
@@ -26,16 +26,16 @@
     02. Reset
 ==================================*/
 /*------------------- 2.1. Container -------------------*/
-//@import 'reset/container';
+@import 'reset/container';
 
 /*------------------- 2.2. Grid -------------------*/
-//@import 'reset/grid';
+@import 'reset/grid';
 
 /*------------------- 2.3. Input -------------------*/
-//@import 'reset/input';
+@import 'reset/input';
 
 /*------------------- 2.4. Slick Slider -------------------*/
-//@import 'reset/slick-slider';
+@import 'reset/slick-slider';
 
 /*------------------- 2.5. Mobile Menu -------------------*/
 @import 'reset/mobile-menu';
@@ -106,7 +106,7 @@
 //@import 'template/sections/error';
 
 /*------------------- 4.00. Popup Search  -------------------*/
-@import 'template/sections/popupsearch-v1';
+//@import 'template/sections/popupsearch-v1';
 
 /*------------------- 4.00. Popup Side Menu  -------------------*/
 @import 'template/sections/sidemenu-v1';

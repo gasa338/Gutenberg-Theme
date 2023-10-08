@@ -61,7 +61,21 @@ Mobile Menu
                 <img src="<?php echo $mobile_logo['src']; ?>" alt="<?php echo $mobile_logo['alt']; ?>">
             </a>
         </div>
-        <div class="mobile-menu">
+<!--        <div class="mobile-menu">-->
+	        <?php
+	        wp_nav_menu(
+		        array(
+			        'theme_location'  => 'menu-1',
+			        'container'       => 'div',
+			        'container_class' => 'mobile-menu',
+			        'depth'           => 2,
+			        'walker'          => new Top_Main_Navigation(),
+			        //  'add_li_class' => 'nav-product d-flex flex-column align-items-center'
+		        )
+	        );
+	        ?>
+
+            <!--
             <ul>
                 <li class="menu-item-has-children">
                     <a href="#">Home</a>
@@ -119,7 +133,8 @@ Mobile Menu
                     <a href="contact.html">Contact</a>
                 </li>
             </ul>
-        </div>
+            -->
+<!--        </div>-->
     </div>
 </div>
 <!--==============================

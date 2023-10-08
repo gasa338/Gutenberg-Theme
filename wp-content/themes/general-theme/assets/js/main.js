@@ -207,7 +207,7 @@
     //     });
     // }
 
-    /*----------- 07. Global Slider ----------*//*
+    /*----------- 07. Global Slider ----------*/
     $(".global-carousel").each(function () {
         var carouselSlide = $(this);
 
@@ -361,7 +361,6 @@
             ],
         });
     });
-*/
     /*----------- 08. Custom Animaiton For Slider ----------*/
     $('[data-ani-duration]').each(function () {
         var durationTime = $(this).data('ani-duration');
@@ -808,52 +807,52 @@
                 });
             }
 
-            // // Indicator Position
-            // function linePos() {
-            //     var $btnActive = $menu.find(opt.tabButton + ".active"),
-            //         $height = $btnActive.css("height"),
-            //         $width = $btnActive.css("width"),
-            //         $top = $btnActive.position().top + "px",
-            //         $left = $btnActive.position().left + "px";
+            // Indicator Position
+            function linePos() {
+                var $btnActive = $menu.find(opt.tabButton + ".active"),
+                    $height = $btnActive.css("height"),
+                    $width = $btnActive.css("width"),
+                    $top = $btnActive.position().top + "px",
+                    $left = $btnActive.position().left + "px";
 
-            //     $line.get(0).style.setProperty("--height-set", $height);
-            //     $line.get(0).style.setProperty("--width-set", $width);
-            //     $line.get(0).style.setProperty("--pos-y", $top);
-            //     $line.get(0).style.setProperty("--pos-x", $left);
+                $line.get(0).style.setProperty("--height-set", $height);
+                $line.get(0).style.setProperty("--width-set", $width);
+                $line.get(0).style.setProperty("--pos-y", $top);
+                $line.get(0).style.setProperty("--pos-x", $left);
 
-            //     if (
-            //         $($button).first().position().left ==
-            //         $btnActive.position().left
-            //     ) {
-            //         $line
-            //             .addClass("start")
-            //             .removeClass("center")
-            //             .removeClass("end");
-            //     } else if (
-            //         $($button).last().position().left ==
-            //         $btnActive.position().left
-            //     ) {
-            //         $line
-            //             .addClass("end")
-            //             .removeClass("center")
-            //             .removeClass("start");
-            //     } else {
-            //         $line
-            //             .addClass("center")
-            //             .removeClass("start")
-            //             .removeClass("end");
-            //     }
-            // }
+                if (
+                    $($button).first().position().left ==
+                    $btnActive.position().left
+                ) {
+                    $line
+                        .addClass("start")
+                        .removeClass("center")
+                        .removeClass("end");
+                } else if (
+                    $($button).last().position().left ==
+                    $btnActive.position().left
+                ) {
+                    $line
+                        .addClass("end")
+                        .removeClass("center")
+                        .removeClass("start");
+                } else {
+                    $line
+                        .addClass("center")
+                        .removeClass("start")
+                        .removeClass("end");
+                }
+            }
             // linePos();
         });
     };
 
-    // if ($(".testi-slider-controller").length) {
-    //     $(".testi-slider-controller").defaultTab({
-    //         sliderTab: true,
-    //         tabButton: ".indicatior-btn",
-    //     });
-    // }
+    if ($(".testi-slider-controller").length) {
+        $(".testi-slider-controller").defaultTab({
+            sliderTab: true,
+            tabButton: ".indicatior-btn",
+        });
+    }
 
     /*----------- 18. Shape Mockup ----------*/
     $.fn.shapeMockup = function () {
