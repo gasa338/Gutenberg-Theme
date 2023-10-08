@@ -14,12 +14,12 @@ $features[] = get_field('feature_area_3');
                             $bg_image = general_get_image( $feature['bg_image'] )
                             ?>
 						<div class="feature-card_bg">
-							<img src="<?php echo $bg_image['src'] ?>" alt="<?php echo $bg_image['alt'] ?>">
+							<img src="<?php echo $bg_image['src'] ?>" alt="<?php echo $bg_image['alt'] ?>" srcset="<?php echo $bg_image['srcset'] ?>"">
 						</div>
                         <?php endif; ?>
 						<div class="feature-card_icon">
                             <?php $icon = general_get_image( $feature['icon'] ); ?>
-							<img src="<?php echo $icon['src'] ?>" alt="<?php echo $icon['alt'] ?>">
+							<img src="<?php echo $icon['src'] ?>" alt="<?php echo $icon['alt'] ?>" srcset="<?php echo $icon['srcset'] ?>">
 						</div>
 						<h6 class="feature-card_subtitle"><?php echo $feature['subtitle']; ?></h6>
 						<h4 class="feature-card_title"><a href="<?php echo $feature['title']['url']; ?>"><?php echo $feature['title']['title']; ?></a></h4>

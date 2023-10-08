@@ -30,7 +30,7 @@ Service Area 02
                     <div class="col-lg-4 col-md-6">
                         <div class="service-card style2">
                             <div class="service-card_icon">
-                                <img src="<?php echo $icon['src']; ?>" alt="<?php echo $icon['alt']; ?>">
+                                <img src="<?php echo $icon['src']; ?>" alt="<?php echo $icon['alt']; ?>" srcset="<?php echo $icon['srcset']; ?>">
                             </div>
                             <div class="service-card_content">
                                 <h4 class="service-card_title h5">

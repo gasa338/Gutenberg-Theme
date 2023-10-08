@@ -11,7 +11,7 @@ Why-choose-us Area
             <div class="col-lg-6">
                 <div class="wcu-thumb">
                     <?php $small_image = general_get_image($left_side['big_image']); ?>
-                    <img class="img-1" src="<?php echo$small_image['src'] ?>" alt="<?php echo$small_image['alt'] ?>">
+                    <img class="img-1" src="<?php echo $small_image['src'] ?>" alt="<?php echo$small_image['alt'] ?>" srcset="<?php echo$small_image['srcset'] ?>">
 
 	                <?php if($left_side['small_image'] != '' ): ?>
                     <div class="img-2 jump">

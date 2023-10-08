@@ -23,10 +23,10 @@ switch (get_field( 'about_spaces' )) {
 			<div class="col-lg-6">
 				<div class="about-thumb mb-5 mb-lg-0">
                     <?php $big_image = general_get_image( $images['big_image'] ) ?>
-					<img class="about-img-1" src="<?php echo $big_image['src'] ?>" alt="<?php echo $big_image['alt'] ?>">
+					<img class="about-img-1" src="<?php echo $big_image['src'] ?>" alt="<?php echo $big_image['alt'] ?>" srcset="<?php echo $big_image['srcset'] ?>">
                     <?php if ($images['small_image'] != ''):
                         $small_image = general_get_image( $images['small_image'] ); ?>
-					<img class="about-img-2 jump" src="<?php echo $small_image['src'] ?>" alt="<?php echo $small_image['alt'] ?>">
+					<img class="about-img-2 jump" src="<?php echo $small_image['src'] ?>" alt="<?php echo $small_image['alt'] ?>" srcset="<?php echo $small_image['alt'] ?>">
                     <?php endif; ?>
 				</div>
 			</div>

@@ -15,7 +15,7 @@ Goal Area
 			<div class="col-lg-6 order-lg-2 text-lg-end">
 				<div class="goal-thumb-1 mb-40 mb-lg-0">
                     <?php $image = general_get_image( $image_id ); ?>
-                    <img src="<?php echo $image['src']; ?>" alt="<?php echo $image['alt']; ?>">
+                    <img src="<?php echo $image['src']; ?>" alt="<?php echo $image['alt']; ?>" srcset="<?php echo $image['srcset']; ?>">
                     <?php if ($image_text != ''): ?>
                     <div class="goal-badge-wrap">
 						<div class="goal-badge"><?php echo str_replace('<p>', '', wpautop($image_text)); ?></div>
