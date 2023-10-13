@@ -2,13 +2,27 @@
 $title    = get_field( 'pricin_plan_1_title' );
 $subtitle = get_field( 'pricin_plan_1_subtitle' );
 $sections = get_field('sections');
+$spaces = '';
+switch (get_field( 'pricin_plan_1_spaces' )) {
+	case 'space':
+		$spaces = 'space';
+		break;
+	case 'space-top':
+		$spaces = 'space-top';
+		break;
+	case 'space-bottom':
+		$spaces = 'space-bottom';
+		break;
+	default:
+		break;
+}
 ?>
     <!--==============================
 	Pricing plan Area
 	==============================-->
 
 <?php if ( $sections ): ?>
-    <div class="pricing-area">
+    <div class="pricing-area <?php echo $spaces; ?>">
         <div class="container">
 			<?php if ( $title != '' || $subtitle != '' ): ?>
                 <div class="title-area text-center">
