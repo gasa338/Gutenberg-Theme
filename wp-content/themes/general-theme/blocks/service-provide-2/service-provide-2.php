@@ -27,7 +27,7 @@ if ( have_rows( 'service_provide_2_services' ) ): ?>
                         <img src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt']; ?>">
                     </div>
                     <div class="service-card_content">
-                        <?php $title = get_sub_field( 'title' ); ?>
+<!--                        --><?php //$title = get_sub_field( 'title' ); ?>
 <!--                        <h4 class="service-card_title h5"><a href="--><?php //echo $title['url'] ?><!--">--><?php //echo $title['title'];?><!--</a></h4>-->
                         <p class="service-card_text"><?php echo get_sub_field('descripton'); ?></p>
                         <?php $link = get_sub_field( 'button' );  ?>
