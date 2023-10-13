@@ -2,6 +2,7 @@
 !wp-content/
 # ignore everything in the root except the "wp-content" directory.
 /*
+!wp-content/
 # ignore everything in the "wp-content" directory, except:
 # mu-plugins, plugins, and themes directories
 wp-content/*
@@ -72,3 +73,4 @@ Thumbs.db
 # track these mu-plugins, plugins, and themes
 # add your own entries here
 !wp-content/themes/general-theme/
+!bitbucket-pipelines.yml

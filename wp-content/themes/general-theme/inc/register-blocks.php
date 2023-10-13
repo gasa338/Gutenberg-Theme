@@ -92,6 +92,36 @@ function acf_pre_init_blocks(): void {
 		) );
 
 		/** ==============================
+		 * Service We Provide 2
+		 * ============================== */
+		acf_register_block_type( array(
+			'name'            => 'service-provide-2',
+			'title'           => 'Service We Provide 2',
+			'description'     => 'Hero section 1.',
+			'category'        => 'custom_theme',
+			'mode'            => 'preview',
+			'supports'        => array(
+				'align' => true,
+				'mode'  => false,
+				'jsx'   => true,
+			),
+			'example'         => array(
+				'attributes' => array(
+					'mode' => 'preview',
+					'data' => array(
+						'testimonial' => "Blocks are...",
+						'author'      => "Jane Smith",
+						'role'        => "Person",
+						'is_preview'  => true
+					)
+				)
+			),
+
+			'render_template' => 'blocks/service-provide-2/service-provide-2.php',
+			'enqueue_style'   => get_template_directory_uri() . '/blocks/service-provide-2/service-provide-2.css',
+		) );
+
+		/** ==============================
 		 * Counter area
 		 * ============================== */
 		acf_register_block_type( array(
