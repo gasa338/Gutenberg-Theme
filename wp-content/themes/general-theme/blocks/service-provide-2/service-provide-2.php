@@ -1,6 +1,6 @@
 <?php
 $spaces = '';
-switch (get_field( 'service_provide_2_services' )) {
+switch (get_field( 'service_provide_2_spaces' )) {
 	case 'space':
 		$spaces = 'space';
 		break;
