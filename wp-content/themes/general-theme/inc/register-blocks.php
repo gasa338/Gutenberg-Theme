@@ -437,6 +437,34 @@ function acf_pre_init_blocks(): void {
 			),
 			'render_template' => 'blocks/service-widget-work-time/service-widget-work-time.php',
 		) );
+
+		/** ==============================
+		 * Contact Area
+		 * ============================== */
+		acf_register_block_type( array(
+			'name'            => 'contact-area',
+			'title'           => 'Contact Area',
+			'description'     => 'Hero section 1.',
+			'category'        => 'custom_theme',
+			'mode'            => 'preview',
+			'supports'        => array(
+				'align' => true,
+				'mode'  => false,
+				'jsx'   => true,
+			),
+			'example'         => array(
+				'attributes' => array(
+					'mode' => 'preview',
+					'data' => array(
+						'testimonial' => "Blocks are...",
+						'author'      => "Jane Smith",
+						'role'        => "Person",
+						'is_preview'  => true
+					)
+				)
+			),
+			'render_template' => 'blocks/contact-area/contact-area.php',
+		) );
 	}
 }
 
