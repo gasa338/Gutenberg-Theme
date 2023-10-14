@@ -73,4 +73,5 @@ Thumbs.db
 # track these mu-plugins, plugins, and themes
 # add your own entries here
 !wp-content/themes/general-theme/
+!wp-content/themes/general-theme/theme.json
 !bitbucket-pipelines.yml

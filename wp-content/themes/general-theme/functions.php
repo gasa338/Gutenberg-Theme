@@ -160,6 +160,17 @@ function general_theme_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Service Sidebar', 'general-theme' ),
+			'id'            => 'service-sidebar',
+			'description'   => esc_html__( 'Add widgets here.', 'general-theme' ),
+			'before_widget' => '<div id="%1$s" class="widget widget_categories">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
 }
 add_action( 'widgets_init', 'general_theme_widgets_init' );
 
@@ -272,10 +283,16 @@ require get_template_directory() . '/inc/register-blocks.php';
 add_filter( 'block_categories_all', 'general_block_category', 10, 2);
 function general_block_category( $categories, $post ) {
 
-	array_unshift( $categories, array(
+	array_unshift( $categories,
+		array(
 		'slug'	=> 'custom_theme',
 		'title' => 'Custom theme'
-	) );
+		),
+		array(
+		'slug'	=> 'custom_theme_inner',
+		'title' => 'Custom Inner blocks'
+		)
+	);
 
 	return $categories;
 }

@@ -1016,179 +1016,10 @@
 
 /***/ }),
 
-/***/ "./assets/sass/template/sections/_service-2.scss":
-/*!*******************************************************!*\
-  !*** ./assets/sass/template/sections/_service-2.scss ***!
-  \*******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./assets/sass/template/sections/_service-provide.scss":
-/*!*************************************************************!*\
-  !*** ./assets/sass/template/sections/_service-provide.scss ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./assets/sass/template/sections/_wcu-1.scss":
-/*!***************************************************!*\
-  !*** ./assets/sass/template/sections/_wcu-1.scss ***!
-  \***************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./assets/sass/template/sections/_counter-1.scss":
-/*!*******************************************************!*\
-  !*** ./assets/sass/template/sections/_counter-1.scss ***!
-  \*******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./assets/sass/template/sections/_testimonial-1.scss":
-/*!***********************************************************!*\
-  !*** ./assets/sass/template/sections/_testimonial-1.scss ***!
-  \***********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./assets/sass/template/sections/_pricing-1.scss":
-/*!*******************************************************!*\
-  !*** ./assets/sass/template/sections/_pricing-1.scss ***!
-  \*******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./assets/sass/template/breadcumb/_breadcumb-v1-1.scss":
-/*!*************************************************************!*\
-  !*** ./assets/sass/template/breadcumb/_breadcumb-v1-1.scss ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./assets/sass/template/sections/_cta-1.scss":
-/*!***************************************************!*\
-  !*** ./assets/sass/template/sections/_cta-1.scss ***!
-  \***************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./assets/sass/general-style.scss":
-/*!****************************************!*\
-  !*** ./assets/sass/general-style.scss ***!
-  \****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./assets/sass/template/sections/_hero-1.scss":
-/*!****************************************************!*\
-  !*** ./assets/sass/template/sections/_hero-1.scss ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./assets/sass/template/sections/_feature.scss":
-/*!*****************************************************!*\
-  !*** ./assets/sass/template/sections/_feature.scss ***!
-  \*****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./assets/sass/template/sections/_about.scss":
-/*!***************************************************!*\
-  !*** ./assets/sass/template/sections/_about.scss ***!
-  \***************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./assets/sass/template/sections/_parallax.scss":
-/*!******************************************************!*\
-  !*** ./assets/sass/template/sections/_parallax.scss ***!
-  \******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./assets/sass/template/sections/_service-offering.scss":
-/*!**************************************************************!*\
-  !*** ./assets/sass/template/sections/_service-offering.scss ***!
-  \**************************************************************/
+/***/ "./assets/sass/style.scss":
+/*!********************************!*\
+  !*** ./assets/sass/style.scss ***!
+  \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1285,20 +1116,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/dist/js/main": 0,
-/******/ 			"blocks/service-offering/service-offering": 0,
-/******/ 			"blocks/parallax/parallax": 0,
-/******/ 			"blocks/about-area/about-area": 0,
-/******/ 			"blocks/feature-area/feature-area": 0,
-/******/ 			"blocks/hero-home-1/hero-section": 0,
-/******/ 			"style": 0,
-/******/ 			"blocks/cta-area/cta-area": 0,
-/******/ 			"blocks/hero-breadcrumb/hero-breadcrumb": 0,
-/******/ 			"blocks/pricing-plan/pricing-plan": 0,
-/******/ 			"blocks/testimonial-1/testimonial-1": 0,
-/******/ 			"blocks/counter-area/counter-area": 0,
-/******/ 			"blocks/why-choose-us/why-choose-us": 0,
-/******/ 			"blocks/service-provide/service-provide": 0,
-/******/ 			"blocks/service-provide-2/service-provide-2": 0
+/******/ 			"style": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -1348,21 +1166,8 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide","blocks/service-provide-2/service-provide-2"], () => (__webpack_require__("./assets/js/main.js")))
-/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide","blocks/service-provide-2/service-provide-2"], () => (__webpack_require__("./assets/sass/template/sections/_hero-1.scss")))
-/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide","blocks/service-provide-2/service-provide-2"], () => (__webpack_require__("./assets/sass/template/sections/_feature.scss")))
-/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide","blocks/service-provide-2/service-provide-2"], () => (__webpack_require__("./assets/sass/template/sections/_about.scss")))
-/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide","blocks/service-provide-2/service-provide-2"], () => (__webpack_require__("./assets/sass/template/sections/_parallax.scss")))
-/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide","blocks/service-provide-2/service-provide-2"], () => (__webpack_require__("./assets/sass/template/sections/_service-offering.scss")))
-/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide","blocks/service-provide-2/service-provide-2"], () => (__webpack_require__("./assets/sass/template/sections/_service-2.scss")))
-/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide","blocks/service-provide-2/service-provide-2"], () => (__webpack_require__("./assets/sass/template/sections/_service-provide.scss")))
-/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide","blocks/service-provide-2/service-provide-2"], () => (__webpack_require__("./assets/sass/template/sections/_wcu-1.scss")))
-/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide","blocks/service-provide-2/service-provide-2"], () => (__webpack_require__("./assets/sass/template/sections/_counter-1.scss")))
-/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide","blocks/service-provide-2/service-provide-2"], () => (__webpack_require__("./assets/sass/template/sections/_testimonial-1.scss")))
-/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide","blocks/service-provide-2/service-provide-2"], () => (__webpack_require__("./assets/sass/template/sections/_pricing-1.scss")))
-/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide","blocks/service-provide-2/service-provide-2"], () => (__webpack_require__("./assets/sass/template/breadcumb/_breadcumb-v1-1.scss")))
-/******/ 	__webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide","blocks/service-provide-2/service-provide-2"], () => (__webpack_require__("./assets/sass/template/sections/_cta-1.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["blocks/service-offering/service-offering","blocks/parallax/parallax","blocks/about-area/about-area","blocks/feature-area/feature-area","blocks/hero-home-1/hero-section","style","blocks/cta-area/cta-area","blocks/hero-breadcrumb/hero-breadcrumb","blocks/pricing-plan/pricing-plan","blocks/testimonial-1/testimonial-1","blocks/counter-area/counter-area","blocks/why-choose-us/why-choose-us","blocks/service-provide/service-provide","blocks/service-provide-2/service-provide-2"], () => (__webpack_require__("./assets/sass/general-style.scss")))
+/******/ 	__webpack_require__.O(undefined, ["style"], () => (__webpack_require__("./assets/js/main.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["style"], () => (__webpack_require__("./assets/sass/style.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
