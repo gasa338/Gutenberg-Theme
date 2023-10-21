@@ -165,7 +165,7 @@
 
     /*---------- 05. Scroll To Top ----------*/
     // progressAvtivation
-    if($('.scroll-top')) {    
+    if($('.scroll-top')) {
         var scrollTopbtn = document.querySelector('.scroll-top');
         var progressPath = document.querySelector('.scroll-top path');
         var pathLength = progressPath.getTotalLength();
@@ -173,7 +173,7 @@
         progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
         progressPath.style.strokeDashoffset = pathLength;
         progressPath.getBoundingClientRect();
-        progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';		
+        progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
         var updateProgress = function () {
             var scroll = $(window).scrollTop();
             var height = $(document).height() - $(window).height();
@@ -181,7 +181,7 @@
             progressPath.style.strokeDashoffset = progress;
         }
         updateProgress();
-        $(window).scroll(updateProgress);	
+        $(window).scroll(updateProgress);
         var offset = 50;
         var duration = 750;
         jQuery(window).on('scroll', function() {
@@ -190,7 +190,7 @@
             } else {
                 jQuery(scrollTopbtn).removeClass('show');
             }
-        });				
+        });
         jQuery(scrollTopbtn).on('click', function(event) {
             event.preventDefault();
             jQuery('html, body').animate({scrollTop: 0}, 1);
@@ -361,23 +361,24 @@
             ],
         });
     });
+
     /*----------- 08. Custom Animaiton For Slider ----------*/
     $('[data-ani-duration]').each(function () {
         var durationTime = $(this).data('ani-duration');
         $(this).css('animation-duration', durationTime);
     });
-    
+
     $('[data-ani-delay]').each(function () {
         var delayTime = $(this).data('ani-delay');
         $(this).css('animation-delay', delayTime);
     });
-    
+
     $('[data-ani]').each(function () {
         var animaionName = $(this).data('ani');
         $(this).addClass(animaionName);
         $('.slick-current [data-ani]').addClass('slider-animated');
     });
-    
+
     $('.global-carousel').on('afterChange', function (event, slick, currentSlide, nextSlide) {
         $(slick.$slides).find('[data-ani]').removeClass('slider-animated');
         $(slick.$slides[currentSlide]).find('[data-ani]').addClass('slider-animated');
@@ -423,9 +424,9 @@
                     // Clear the form.
                     $(
                         form +
-                            ' input:not([type="submit"]),' +
-                            form +
-                            " textarea"
+                        ' input:not([type="submit"]),' +
+                        form +
+                        " textarea"
                     ).val("");
                 })
                 .fail(function (data) {
@@ -455,16 +456,16 @@
             if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
                 $(this).data('animate', true);
                 $(this).find('.circle').circleProgress({
-                startAngle: -Math.PI / 2,
-                value: percent / 100,
-                size: 135,
-                thickness: 7,
-                emptyFill: "#2C2C2C",
-                fill: {
-                    color: '#F41E1E'
-                }
+                    startAngle: -Math.PI / 2,
+                    value: percent / 100,
+                    size: 135,
+                    thickness: 7,
+                    emptyFill: "#2C2C2C",
+                    fill: {
+                        color: '#F41E1E'
+                    }
                 }).on('circle-animation-progress', function (event, progress, stepValue) {
-                $(this).find('.circle-num').text((stepValue*100).toFixed(0) + "%");
+                    $(this).find('.circle-num').text((stepValue*100).toFixed(0) + "%");
                 }).stop();
             }
         });
@@ -546,22 +547,22 @@
     function popupSideMenu($sideMenu, $sideMunuOpen, $sideMenuCls, $toggleCls) {
         // Sidebar Popup
         $($sideMunuOpen).on('click', function (e) {
-        e.preventDefault();
-        $($sideMenu).addClass($toggleCls);
+            e.preventDefault();
+            $($sideMenu).addClass($toggleCls);
         });
         $($sideMenu).on('click', function (e) {
-        e.stopPropagation();
-        $($sideMenu).removeClass($toggleCls)
+            e.stopPropagation();
+            $($sideMenu).removeClass($toggleCls)
         });
         var sideMenuChild = $sideMenu + ' > div';
         $(sideMenuChild).on('click', function (e) {
-        e.stopPropagation();
-        $($sideMenu).addClass($toggleCls)
+            e.stopPropagation();
+            $($sideMenu).addClass($toggleCls)
         });
         $($sideMenuCls).on('click', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        $($sideMenu).removeClass($toggleCls);
+            e.preventDefault();
+            e.stopPropagation();
+            $($sideMenu).removeClass($toggleCls);
         });
     };
     popupSideMenu('.sidemenu-wrapper', '.sideMenuToggler', '.sideMenuCls', 'show');
@@ -570,7 +571,7 @@
     /* magnificPopup img view */
     $(".popup-image").magnificPopup({
         type: "image",
-        mainClass: 'mfp-zoom-in', 
+        mainClass: 'mfp-zoom-in',
         removalDelay: 260,
         gallery: {
             enabled: true,
@@ -580,7 +581,7 @@
     /* magnificPopup video view */
     $(".popup-video").magnificPopup({
         type: "iframe",
-        mainClass: 'mfp-zoom-in', 
+        mainClass: 'mfp-zoom-in',
         removalDelay: 260,
     });
 
@@ -702,16 +703,16 @@
     // Active specifix
     $('.filter-active-cat1').imagesLoaded(function () {
         var $filter = '.filter-active-cat1',
-        $filterItem = '.filter-item',
-        $filterMenu = '.filter-menu-active';
+            $filterItem = '.filter-item',
+            $filterMenu = '.filter-menu-active';
 
         if ($($filter).length > 0) {
             var $grid = $($filter).isotope({
                 itemSelector: $filterItem,
                 filter: '.cat1',
                 masonry: {
-                // use outer width of grid-sizer for columnWidth
-                columnWidth: 1
+                    // use outer width of grid-sizer for columnWidth
+                    columnWidth: 1
                 }
             });
 
@@ -719,11 +720,11 @@
             $($filterMenu).on('click', 'button', function () {
                 var filterValue = $(this).attr('data-filter');
                 $grid.isotope({
-                filter: filterValue
+                    filter: filterValue
                 });
             });
 
-            // Menu Active Class 
+            // Menu Active Class
             $($filterMenu).on('click', 'button', function (event) {
                 event.preventDefault();
                 $(this).addClass('active');
@@ -794,9 +795,9 @@
                             $menu
                                 .find(
                                     opt.tabButton +
-                                        '[data-slide-go-to="' +
-                                        nextSlide +
-                                        '"]'
+                                    '[data-slide-go-to="' +
+                                    nextSlide +
+                                    '"]'
                                 )
                                 .addClass("active")
                                 .siblings()
@@ -807,42 +808,42 @@
                 });
             }
 
-            // Indicator Position
-            function linePos() {
-                var $btnActive = $menu.find(opt.tabButton + ".active"),
-                    $height = $btnActive.css("height"),
-                    $width = $btnActive.css("width"),
-                    $top = $btnActive.position().top + "px",
-                    $left = $btnActive.position().left + "px";
+            // // Indicator Position
+            // function linePos() {
+            //     var $btnActive = $menu.find(opt.tabButton + ".active"),
+            //         $height = $btnActive.css("height"),
+            //         $width = $btnActive.css("width"),
+            //         $top = $btnActive.position().top + "px",
+            //         $left = $btnActive.position().left + "px";
 
-                $line.get(0).style.setProperty("--height-set", $height);
-                $line.get(0).style.setProperty("--width-set", $width);
-                $line.get(0).style.setProperty("--pos-y", $top);
-                $line.get(0).style.setProperty("--pos-x", $left);
+            //     $line.get(0).style.setProperty("--height-set", $height);
+            //     $line.get(0).style.setProperty("--width-set", $width);
+            //     $line.get(0).style.setProperty("--pos-y", $top);
+            //     $line.get(0).style.setProperty("--pos-x", $left);
 
-                if (
-                    $($button).first().position().left ==
-                    $btnActive.position().left
-                ) {
-                    $line
-                        .addClass("start")
-                        .removeClass("center")
-                        .removeClass("end");
-                } else if (
-                    $($button).last().position().left ==
-                    $btnActive.position().left
-                ) {
-                    $line
-                        .addClass("end")
-                        .removeClass("center")
-                        .removeClass("start");
-                } else {
-                    $line
-                        .addClass("center")
-                        .removeClass("start")
-                        .removeClass("end");
-                }
-            }
+            //     if (
+            //         $($button).first().position().left ==
+            //         $btnActive.position().left
+            //     ) {
+            //         $line
+            //             .addClass("start")
+            //             .removeClass("center")
+            //             .removeClass("end");
+            //     } else if (
+            //         $($button).last().position().left ==
+            //         $btnActive.position().left
+            //     ) {
+            //         $line
+            //             .addClass("end")
+            //             .removeClass("center")
+            //             .removeClass("start");
+            //     } else {
+            //         $line
+            //             .addClass("center")
+            //             .removeClass("start")
+            //             .removeClass("end");
+            //     }
+            // }
             // linePos();
         });
     };
@@ -943,8 +944,8 @@
     /*----------- 20. Progress Bar Animation ----------*/
     $('.progress-bar').waypoint(function() {
         $('.progress-bar').css({
-        animation: "animate-positive 1.8s",
-        opacity: "1"
+            animation: "animate-positive 1.8s",
+            opacity: "1"
         });
     }, { offset: '75%' });
 
@@ -955,43 +956,43 @@
         max: 100,
         values: [10, 75],
         slide: function (event, ui) {
-          $(".from").text("$" + ui.values[0]);
-          $(".to").text("$" + ui.values[1]);
+            $(".from").text("$" + ui.values[0]);
+            $(".to").text("$" + ui.values[1]);
         }
-      });
-      $(".from").text("$" + $(".price_slider").slider("values", 0));
-      $(".to").text("$" + $(".price_slider").slider("values", 1));
+    });
+    $(".from").text("$" + $(".price_slider").slider("values", 0));
+    $(".to").text("$" + $(".price_slider").slider("values", 1));
 
     /*----------- 22. One Page Nav ----------*/
     function onePageNav(element) {
-    if ($(element).length > 0) {
-        $(element).each(function () {
-        var link = $(this).find('a');
-        $(this).find(link).each(function () {
-            $(this).on('click', function () {
-            var target = $(this.getAttribute('href'));
-            if (target.length) {
-                event.preventDefault();
-                $('html, body').stop().animate({
-                scrollTop: target.offset().top - 10
-                }, 1000);
-            };
+        if ($(element).length > 0) {
+            $(element).each(function () {
+                var link = $(this).find('a');
+                $(this).find(link).each(function () {
+                    $(this).on('click', function () {
+                        var target = $(this.getAttribute('href'));
+                        if (target.length) {
+                            event.preventDefault();
+                            $('html, body').stop().animate({
+                                scrollTop: target.offset().top - 10
+                            }, 1000);
+                        };
 
-            });
-        });
-        })
-    }
+                    });
+                });
+            })
+        }
     };
     onePageNav('.onepage-nav');
 
     //one page sticky menu  
     $(window).on('scroll', function(){
         if ($('.onepage-nav').length > 0) {
-        if( $(window).scrollTop()> 0){
-            $('.nav-header .sticky-active').addClass('sticky');
+            if( $(window).scrollTop()> 0){
+                $('.nav-header .sticky-active').addClass('sticky');
             } else {
-            $('.nav-header .sticky-active').removeClass('sticky');
-        }
+                $('.nav-header .sticky-active').removeClass('sticky');
+            }
         };
     });
 
@@ -1017,7 +1018,7 @@
             $(this).siblings(".active").removeClass("active");
             linePos();
         });
-        
+
         function linePos() {
             var $btnActive = $menu.find(".active"),
                 $height = $btnActive.css("height"),
@@ -1027,7 +1028,7 @@
 
             $(window).on('resize', function () {
                 $top = $btnActive.position().top + "px",
-                $left = $btnActive.position().left + "px";
+                    $left = $btnActive.position().left + "px";
             });
 
             $line.get(0).style.setProperty("--height-set", $height);
@@ -1138,7 +1139,7 @@
     if ($('.single-select').length){
         $('.single-select').niceSelect();
     }
-    
+
 })(jQuery);
 
 
