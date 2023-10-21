@@ -192,14 +192,19 @@
     </svg>
 </div>
 
-<?php wp_footer(); ?>
-
-
-
+	<?php wp_footer(); ?>
 <script>
-
-    /*---------- 06. Set Background Image ----------*/
+    /*
+    const dataBgSrc = document.querySelectorAll('[data-bg-src]')
+    dataBgSrc.forEach( (obj, index) => {
+        const src = obj.getAttribute('data-bg-src')
+        obj.style.backgroundImage="url(" + src + ")";
+        obj.className = 'background-image'
+        obj.removeAttribute('data-bg-src')
+    })
+    */
     (function ($) {
+        "use strict";
         if ($("[data-bg-src]").length > 0) {
             $("[data-bg-src]").each(function () {
                 var src = $(this).attr("data-bg-src");
@@ -207,8 +212,8 @@
                 $(this).removeAttr("data-bg-src").addClass("background-image");
             });
         }
-
     })(jQuery);
+
 </script>
 </body>
 </html>
