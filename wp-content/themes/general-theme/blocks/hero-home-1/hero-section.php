@@ -7,9 +7,9 @@ Hero Area
 ==============================-->
 <div class="hero-wrapper hero-1" id="hero">
 
-    <div class="global-carousel" id="heroSlider1" data-fade="true" data-slide-show="1" data-lg-slide-show="1"
-         data-md-slide-show="1" data-sm-slide-show="1" data-xs-slide-show="1" data-arrows="true" data-xl-arrows="true"
-         data-ml-arrows="true">
+    <div class="global-carousel" id="heroSlider1" data-fade="true" data-slide-show="0" data-lg-slide-show="0"
+         data-md-slide-show="0" data-sm-slide-show="0" data-xs-slide-show="0" data-arrows="false" data-xl-arrows="false"
+         data-ml-arrows="false">
 		<?php
 		foreach ( $fields as $field ):
 			$slider_image = general_get_image( $field['slider_image'] );
