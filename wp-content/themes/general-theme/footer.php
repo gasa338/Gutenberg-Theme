@@ -5,6 +5,7 @@
     <div class=" container">
         <div class="contact-card">
             <div class="info-card">
+
                 <div class="info-card_icon">
                     <i class="fas fa-location-dot"></i>
                 </div>
