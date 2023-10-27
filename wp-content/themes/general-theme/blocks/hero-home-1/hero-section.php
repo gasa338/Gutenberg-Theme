@@ -5,9 +5,9 @@ $fields = get_field( 'hero_section_1' );
 <!--==============================
 Hero Area
 ==============================-->
-<div class="hero-wrapper hero-1" id="hero">
+<div class="hero-wrapper">
 
-    <div class="global-carousel">
+    <div class="">
 <!--    <div class="global-carousel" id="heroSlider1" data-fade="true" data-slide-show="0" data-lg-slide-show="0"-->
 <!--         data-md-slide-show="0" data-sm-slide-show="0" data-xs-slide-show="0" data-arrows="false" data-xl-arrows="false"-->
 <!--         data-ml-arrows="false">-->
@@ -16,7 +16,7 @@ Hero Area
 			$slider_image = general_get_image( $field['slider_image'] );
 			$cover_image = general_get_image( $field['cover_image'] );
 			?>
-            <div class="hero-slider" data-bg-src="<?php echo $slider_image['src']; ?>">
+            <div data-bg-src="<?php echo $slider_image['src']; ?>">
 				<?php if ( ! empty( $field['cover_image'] ) ): ?>
                     <div class="hero-shape1 shape-mockup movingX" data-bottom="165px" data-right="0">
                         <img src="<?php echo $cover_image['src']; ?>" alt="<?php echo $cover_image['alt']; ?>"
@@ -28,13 +28,13 @@ Hero Area
                         <div class="col-xl-6 col-lg-7 col-md-9">
                             <div class="hero-style1">
 								<?php if ( $field['small_text'] ): ?>
-                                    <span class="hero-subtitle" data-ani="slideinup"
+                                    <span class="hero-subtitle"
                                           data-ani-delay="0s"><?php echo $field['small_text']; ?></span>
 								<?php endif; ?>
-                                <h1 class="hero-title text-white" data-ani="slideinup"
+                                <h1 class="hero-title text-white"
                                     data-ani-delay="0.1s"><?php echo $field['title']; ?></h1>
 								<?php if ( $field['link'] ): ?>
-                                    <div class="btn-group" data-ani="slideinup" data-ani-delay="0.2s">
+                                    <div class="btn-group"data-ani-delay="0.2s">
                                         <a href="<?php echo $field['link']['url']; ?>"
                                            class="btn style2"><?php echo $field['link']['title']; ?></a>
                                     </div>

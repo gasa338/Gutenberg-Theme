@@ -328,6 +328,7 @@
       ]
     });
   });
+
   /*----------- 08. Custom Animaiton For Slider ----------*/
   $('[data-ani-duration]').each(function () {
     var durationTime = $(this).data('ani-duration');
@@ -653,7 +654,7 @@
         });
       });
 
-      // Menu Active Class 
+      // Menu Active Class
       $($filterMenu).on('click', 'button', function (event) {
         event.preventDefault();
         $(this).addClass('active');
@@ -719,25 +720,42 @@
         });
       }
 
-      // Indicator Position
-      function linePos() {
-        var $btnActive = $menu.find(opt.tabButton + ".active"),
-          $height = $btnActive.css("height"),
-          $width = $btnActive.css("width"),
-          $top = $btnActive.position().top + "px",
-          $left = $btnActive.position().left + "px";
-        $line.get(0).style.setProperty("--height-set", $height);
-        $line.get(0).style.setProperty("--width-set", $width);
-        $line.get(0).style.setProperty("--pos-y", $top);
-        $line.get(0).style.setProperty("--pos-x", $left);
-        if ($($button).first().position().left == $btnActive.position().left) {
-          $line.addClass("start").removeClass("center").removeClass("end");
-        } else if ($($button).last().position().left == $btnActive.position().left) {
-          $line.addClass("end").removeClass("center").removeClass("start");
-        } else {
-          $line.addClass("center").removeClass("start").removeClass("end");
-        }
-      }
+      // // Indicator Position
+      // function linePos() {
+      //     var $btnActive = $menu.find(opt.tabButton + ".active"),
+      //         $height = $btnActive.css("height"),
+      //         $width = $btnActive.css("width"),
+      //         $top = $btnActive.position().top + "px",
+      //         $left = $btnActive.position().left + "px";
+
+      //     $line.get(0).style.setProperty("--height-set", $height);
+      //     $line.get(0).style.setProperty("--width-set", $width);
+      //     $line.get(0).style.setProperty("--pos-y", $top);
+      //     $line.get(0).style.setProperty("--pos-x", $left);
+
+      //     if (
+      //         $($button).first().position().left ==
+      //         $btnActive.position().left
+      //     ) {
+      //         $line
+      //             .addClass("start")
+      //             .removeClass("center")
+      //             .removeClass("end");
+      //     } else if (
+      //         $($button).last().position().left ==
+      //         $btnActive.position().left
+      //     ) {
+      //         $line
+      //             .addClass("end")
+      //             .removeClass("center")
+      //             .removeClass("start");
+      //     } else {
+      //         $line
+      //             .addClass("center")
+      //             .removeClass("start")
+      //             .removeClass("end");
+      //     }
+      // }
       // linePos();
     });
   };
