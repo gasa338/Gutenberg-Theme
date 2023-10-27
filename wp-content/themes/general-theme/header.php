@@ -48,10 +48,6 @@
         <span class="loader"></span>
     </div>
 </div>
-<!--==============================
-Mobile Menu
-============================== -->
-
 <div class="mobile-menu-wrapper">
     <div class="mobile-menu-area text-center">
         <button class="menu-toggle"><i class="fal fa-times"></i></button>
@@ -74,72 +70,8 @@ Mobile Menu
 		        )
 	        );
 	        ?>
-
-            <!--
-            <ul>
-                <li class="menu-item-has-children">
-                    <a href="#">Home</a>
-                    <ul class="sub-menu">
-                        <li>
-                            <a href="index.html">Home 01</a>
-                        </li>
-                        <li>
-                            <a href="home-2.html">Home 02</a>
-                        </li>
-                        <li>
-                            <a href="home-3.html">Home 03</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children">
-                    <a href="#">Pages</a>
-                    <ul class="sub-menu">
-                        <li><a href="team.html">Team Page</a></li>
-                        <li><a href="team-2.html">Team Page 02</a></li>
-                        <li><a href="team-details.html">Team Details</a></li>
-                        <li><a href="gallery.html">Gallery Page</a></li>
-                        <li><a href="gallery-2.html">Gallery Page 02</a></li>
-                        <li><a href="project.html">Project Page</a></li>
-                        <li><a href="project-details.html">Project Details</a></li>
-                        <li><a href="shop.html">Shop Page</a></li>
-                        <li><a href="shop-details.html">Shop Details</a></li>
-                        <li><a href="pricing.html">Pricing Page</a></li>
-                        <li><a href="error.html">Error Page</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children">
-                    <a href="#">Project</a>
-                    <ul class="sub-menu">
-                        <li><a href="project.html">Projects</a></li>
-                        <li><a href="project-details.html">Project Details</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children">
-                    <a href="#">Service</a>
-                    <ul class="sub-menu">
-                        <li><a href="service.html">Service</a></li>
-                        <li><a href="service-details.html">Service Details</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children">
-                    <a href="#">Blog</a>
-                    <ul class="sub-menu">
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="blog-2.html">Blog 02</a></li>
-                        <li><a href="blog-details.html">Blog Details</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-            -->
-<!--        </div>-->
     </div>
 </div>
-<!--==============================
-Header Area
-==============================-->
 <header class="nav-header header-layout1">
     <div class="header-top d-lg-block d-none">
         <div class="container-fluid">
