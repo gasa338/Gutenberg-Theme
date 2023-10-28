@@ -1315,6 +1315,24 @@ textarea.style2 {
   margin-bottom: 20px;
   position: relative;
 }
+.form-group p > i {
+  display: inline-block;
+  position: absolute;
+  right: 25px;
+  top: 21px;
+  font-size: 16px;
+  color: var(--body-color);
+}
+.form-group p > i.fa-envelope {
+  padding-top: 1px;
+}
+.form-group p > i.fa-comment {
+  margin-top: -2px;
+}
+.form-group p > i.fa-chevron-down {
+  width: 17px;
+  background-color: var(--smoke-color);
+}
 .form-group > i {
   display: inline-block;
   position: absolute;

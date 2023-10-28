@@ -456,14 +456,36 @@ function acf_pre_init_blocks(): void {
 				'attributes' => array(
 					'mode' => 'preview',
 					'data' => array(
-						'testimonial' => "Blocks are...",
-						'author'      => "Jane Smith",
-						'role'        => "Person",
 						'is_preview'  => true
 					)
 				)
 			),
 			'render_template' => 'blocks/contact-area/contact-area.php',
+		) );
+
+		/** ==============================
+		 * Contact Form
+		 * ============================== */
+		acf_register_block_type( array(
+			'name'            => 'contact-form',
+			'title'           => 'Contact form',
+			'description'     => 'Hero section 1.',
+			'category'        => 'custom_theme',
+			'mode'            => 'preview',
+			'supports'        => array(
+				'align' => true,
+				'mode'  => false,
+				'jsx'   => true,
+			),
+			'example'         => array(
+				'attributes' => array(
+					'mode' => 'preview',
+					'data' => array(
+						'is_preview'  => true
+					)
+				)
+			),
+			'render_template' => 'blocks/contact-form/contact-form.php',
 		) );
 	}
 }
@@ -491,9 +513,6 @@ function acf_init_inner_blocks(): void {
 				'attributes' => array(
 					'mode' => 'preview',
 					'data' => array(
-						'testimonial' => "Blocks are...",
-						'author'      => "Jane Smith",
-						'role'        => "Person",
 						'is_preview'  => true
 					)
 				)
