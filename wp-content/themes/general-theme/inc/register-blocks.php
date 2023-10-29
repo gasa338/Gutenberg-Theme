@@ -296,6 +296,35 @@ function acf_pre_init_blocks(): void {
 		) );
 
 		/** ==============================
+		 * General Content
+		 * ============================== */
+		acf_register_block_type( array(
+			'name'            => 'general-content',
+			'title'           => 'General content',
+			'description'     => 'Hero section 1.',
+			'category'        => 'custom_theme',
+			'mode'            => 'preview',
+			'supports'        => array(
+				'align' => true,
+				'mode'  => false,
+				'jsx'   => true,
+			),
+			'example'         => array(
+				'attributes' => array(
+					'mode' => 'preview',
+					'data' => array(
+						'testimonial' => "Blocks are...",
+						'author'      => "Jane Smith",
+						'role'        => "Person",
+						'is_preview'  => true
+					)
+				)
+			),
+			'render_template' => 'blocks/general-content/general-content.php',
+//			'enqueue_style'   => get_template_directory_uri() . '/blocks/service-content/service-content.css',
+		) );
+
+		/** ==============================
 		 * Why choose us (Inner 1)
 		 * ============================== */
 		acf_register_block_type( array(
