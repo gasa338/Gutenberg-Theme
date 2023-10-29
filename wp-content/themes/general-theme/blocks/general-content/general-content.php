@@ -15,7 +15,7 @@ switch ( get_field( 'general_detail_content_spaces' ) ) {
 		break;
 }
 ?>
-<div class="service-details-area space-top overflow-hidden"> <!-- eliminate class space-extra-bottom -->
+<div class="service-details-area <?php echo $spaces; ?> overflow-hidden"> <!-- eliminate class space-extra-bottom -->
     <div class="container">
         <div class="row">
             <div class="col-xxl-8 col-lg-7">
