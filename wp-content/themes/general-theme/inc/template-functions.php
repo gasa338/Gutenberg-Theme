@@ -89,29 +89,3 @@ function general_return_cf7_shortcode(): array {
 	wp_reset_postdata();
 	return $output;
 }
-
-/** change default submit button for contact form 7 */
-/** removing default submit tag */
-/*
-remove_action('wpcf7_init', 'wpcf7_add_form_tag_submit');
-//adding action with function which handles our button markup
-add_action('wpcf7_init', 'general_cf7_button');
-
-function general_cf7_button($tag) {
-	$tag = new WPCF7_FormTag($tag);
-	$class = wpcf7_form_controls_class($tag->type);
-	$attrs = array();
-	$attrs['class'] = $tag->get_class_option($class);
-	$attrs['class'] .= ' twentysixteen-child-custom-btn';
-	$attrs['id'] = $tag->get_id_option();
-	$attrs['tabindex'] = $tag->get_option('tabindex', 'int', true);
-	$value = isset($tag->values[0]) ? $tag->values[0] : '';
-	if (empty($value)) {
-		$value = esc_html__('Contact Us', 'twentysixteen');
-	}
-	$attrs['type'] = 'submit';
-	$attrs = wpcf7_format_atts($attrs);
-//	$html = sprintf('<button><span class="twentysixteen-child-custom-btn-text">%2$s</span><i class="twentysixteen-child-custom-icon fas fa-chevron-right "></i></button>', $attrs, $value);
-//	$html = sprintf();
-	return '<button class="btn">Send A Message</button>';
-}*/
