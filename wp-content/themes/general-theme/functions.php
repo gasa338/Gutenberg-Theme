@@ -222,9 +222,14 @@ function general_theme_scripts() {
 add_action( 'wp_enqueue_scripts', 'general_theme_scripts' );
 
 
-function general_admin_scripts() {
+function general_admin_scripts(): void {
+	$screen = get_current_screen();
 	wp_enqueue_style('admin-css', get_template_directory_uri() . '/assets/dashboard/admin.css');
 	wp_enqueue_style('bootstrap-grid', get_template_directory_uri() . '/assets/dashboard/bootstrap-grid.css');
+	print_r($screen);
+	if ( $screen->is_block_editor ) {
+		wp_enqueue_style('general-css', get_template_directory_uri() . '/blocks-dashboard-custom.min.css');
+	}
 }
 add_action('admin_enqueue_scripts', 'general_admin_scripts');
 
