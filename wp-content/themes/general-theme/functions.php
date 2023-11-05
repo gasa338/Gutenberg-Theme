@@ -230,9 +230,13 @@ function general_admin_scripts(): void {
 		wp_enqueue_style('general-css', get_template_directory_uri() . '/assets/dashboard/blocks-dashboard-custom.css');
 	}
 
-	wp_enqueue_script('custom-general', get_template_directory_uri() . '/assets/dashboard/custom-tiny.js', ['jquery']);
+	wp_enqueue_script('custom-general-own-admin', get_template_directory_uri() . '/assets/dashboard/admin.js', ['wp-element', 'wp-components'], _S_VERSION, true);
 }
 add_action('admin_enqueue_scripts', 'general_admin_scripts');
+
+//add_action( 'enqueue_block_editor_assets', function(){
+//	wp_enqueue_script( 'block-qb-daterange', get_template_directory_uri() . '/assets/dashboard/admin.js');
+//});
 
 /**
  * Implement the Custom Header feature.
