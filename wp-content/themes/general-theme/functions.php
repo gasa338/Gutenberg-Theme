@@ -229,15 +229,10 @@ function general_admin_scripts(): void {
 	if ( $screen->is_block_editor ) {
 		wp_enqueue_style('general-css', get_template_directory_uri() . '/assets/dashboard/blocks-dashboard-custom.css');
 	}
+
+	wp_enqueue_script('custom-general', get_template_directory_uri() . '/assets/dashboard/custom-tiny.js');
 }
 add_action('admin_enqueue_scripts', 'general_admin_scripts');
-
-
-//function wpdocs_enqueue_scripts() {
-//	wp_enqueue_style( 'example-blocks-dashboard-custom', get_template_directory_uri() . '/assets/dashboard/blocks-dashboard-custom.css'	);
-//
-//}
-//add_action( 'enqueue_block_editor_assets', 'wpdocs_enqueue_scripts' );
 
 /**
  * Implement the Custom Header feature.
