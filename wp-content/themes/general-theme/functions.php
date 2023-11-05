@@ -230,7 +230,7 @@ function general_admin_scripts(): void {
 		wp_enqueue_style('general-css', get_template_directory_uri() . '/assets/dashboard/blocks-dashboard-custom.css');
 	}
 
-	wp_enqueue_script('custom-general', get_template_directory_uri() . '/assets/dashboard/custom-tiny.js');
+	wp_enqueue_script('custom-general', get_template_directory_uri() . '/assets/dashboard/custom-tiny.js', ['jquery']);
 }
 add_action('admin_enqueue_scripts', 'general_admin_scripts');
 
