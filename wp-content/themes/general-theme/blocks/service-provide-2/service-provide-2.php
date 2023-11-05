@@ -31,7 +31,9 @@ if ( have_rows( 'service_provide_2_services' ) ): ?>
                         <h4 class="service-card_title h5"><a href="<?php echo $title['url'] ?>"><?php echo $title['title'];?></a></h4>
                         <p class="service-card_text"><?php echo get_sub_field('descripton'); ?></p>
                         <?php $link = get_sub_field( 'button' );  ?>
+                        <?php if (isset($link['url'])): ?>
                         <a href="<?php echo $link['url'] ?>" class="link-btn" tabindex="0"><i class="fas fa-arrow-right"></i> <?php echo $link['title']; ?></a>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
