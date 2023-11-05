@@ -32,7 +32,9 @@ $sidebar_links = get_field( 'service_widget_category_links' );
 				<aside class="sidebar-area">
                     <?php if (!empty($sidebar_links)): ?>
                     <div class="widget widget_categories">
+                        <?php if ($sidebar_title != ''): ?>
                         <h3 class="widget_title"><?php echo $sidebar_title;?></h3>
+                        <?php endif; ?>
                         <ul>
 							<?php foreach ($sidebar_links as $link): ?>
                                 <li>
