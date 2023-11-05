@@ -237,7 +237,7 @@ add_action('admin_enqueue_scripts', 'general_admin_scripts');
 //	wp_enqueue_style( 'example-blocks-dashboard-custom', get_template_directory_uri() . '/assets/dashboard/blocks-dashboard-custom.css'	);
 //
 //}
-add_action( 'enqueue_block_editor_assets', 'wpdocs_enqueue_scripts' );
+//add_action( 'enqueue_block_editor_assets', 'wpdocs_enqueue_scripts' );
 
 /**
  * Implement the Custom Header feature.
