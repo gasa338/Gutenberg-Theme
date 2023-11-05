@@ -660,7 +660,6 @@ function acf_init_inner_blocks(): void {
 		) );
 
 
-
 		/** ==============================
 		 * Service content
 		 * ============================== */

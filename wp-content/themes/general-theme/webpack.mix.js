@@ -20,6 +20,8 @@ mix
     // .sass('assets/sass/general-style.scss', 'style.css')
     .sass('assets/sass/style.scss', 'style.css')
 
+    .sass('assets/sass/dashboard-style.scss', 'assets/dashboard/blocks-dashboard-custom.css')
+
 
 
 

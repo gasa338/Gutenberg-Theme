@@ -226,12 +226,20 @@ function general_admin_scripts(): void {
 	$screen = get_current_screen();
 	wp_enqueue_style('admin-css', get_template_directory_uri() . '/assets/dashboard/admin.css');
 	wp_enqueue_style('bootstrap-grid', get_template_directory_uri() . '/assets/dashboard/bootstrap-grid.css');
-	print_r($screen);
-	if ( $screen->is_block_editor ) {
-		wp_enqueue_style('general-css', get_template_directory_uri() . '/blocks-dashboard-custom.min.css');
-	}
+//	if ( $screen->is_block_editor ) {
+//		wp_enqueue_style('general-css', get_template_directory_uri() . '/assets/dashboard/blocks-dashboard-custom.css');
+//	}
 }
 add_action('admin_enqueue_scripts', 'general_admin_scripts');
+
+
+function wpdocs_enqueue_scripts() {
+
+	$blockPath = '/assets/dashboard/blocks-dashboard-custom.css';
+	wp_enqueue_style( 'example-blocks-dashboard-custom', get_template_directory_uri() . $blockPath	);
+
+}
+add_action( 'enqueue_block_editor_assets', 'wpdocs_enqueue_scripts' );
 
 /**
  * Implement the Custom Header feature.
