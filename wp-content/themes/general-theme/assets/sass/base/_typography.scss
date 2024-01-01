@@ -122,7 +122,8 @@ a.white-hover {
 	outline: 0;
 	transition: all ease 0.4s;
 	&:hover {
-		color: $light-color;
+		color: $white-color;
+		border-bottom: 2px solid $white-color;
 	}
 }
 

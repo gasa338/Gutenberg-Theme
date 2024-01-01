@@ -223,7 +223,8 @@ a.white-hover {
   transition: all ease 0.4s;
 }
 a.white-hover:hover {
-  color: var(--light-color);
+  color: var(--white-color);
+  border-bottom: 2px solid var(--white-color);
 }
 
 button {
