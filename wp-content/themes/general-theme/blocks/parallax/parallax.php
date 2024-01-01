@@ -9,11 +9,10 @@ $bottom_shape = get_field('parallax_bottom_shape');
 <!--==============================
     Service Area
             ==============================-->
-<div class="service-bg-area" data-bg-src="<?php echo general_get_image($background)['url']; ?>">
+<div class="service-bg-area" data-bg-src="<?php echo $background['url']; ?>">
     <?php if($top_shape != ''): ?>
     <div class="sec-shape-top">
-        <?php $top_shape_image = general_get_image($top_shape) ?>
-        <img src="<?php echo $top_shape_image['url'] ?>" alt="<?php echo $top_shape_image['alt'] ?>">
+        <img src="<?php echo $top_shape['url'] ?>" alt="<?php echo $top_shape['alt'] ?>">
     </div>
     <?php endif; ?>
 
@@ -22,8 +21,7 @@ $bottom_shape = get_field('parallax_bottom_shape');
 
     <?php if($bottom_shape != ''): ?>
     <div class="sec-shape-bottom">
-        <?php $bottom_shape_image = general_get_image($bottom_shape); ?>
-        <img src="<?php echo $bottom_shape_image['url'] ?>" alt="<?php echo $bottom_shape_image['alt']; ?>">
+        <img src="<?php echo $bottom_shape['url'] ?>" alt="<?php echo $bottom_shape['alt']; ?>">
     </div>
     <?php endif; ?>
 </div>
