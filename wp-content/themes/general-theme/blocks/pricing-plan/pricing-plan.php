@@ -37,7 +37,6 @@ switch (get_field( 'pricin_plan_1_spaces' )) {
             <div class="row gy-4 justify-content-center">
 
 				<?php foreach ($sections as $key=>$section):
-                    intellrocket_log(sprintf('%s', print_r($section, true)), 'w');
                     ?>
                     <div class="col-lg-4 col-md-6">
                         <div class="pricing-card <?php echo $key == 1 ? 'pricing-card_active': ''; ?>">
@@ -50,7 +49,9 @@ switch (get_field( 'pricin_plan_1_spaces' )) {
                                 <img src="<?php echo $section['regular_icon']['url']; ?>" alt="<?php echo $section['regular_icon']['alt']; ?>">
                             </div>
                             <?php endif; ?>
-                            <h3 class="pricing-card_title"><?php echo $section['name']; ?></h3>
+                            <?php if ($section['name'] != ''): ?>
+                            <div class="pricing-card_title"><a href="<?php echo $section['name']['url']; ?>"> <?php echo $section['name']['title']; ?> </a></div>
+	                    	<?php endif; ?>
                             <?php if (!$section['format']): ?>
                             <h4 class="pricing-card_price">
                                 <span class="currency"><?php echo $section['curency']; ?></span>
