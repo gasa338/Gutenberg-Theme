@@ -1,6 +1,7 @@
 <?php
 $left_side  = get_field( 'choose_us_left_side' );
 $right_side = get_field( 'choose_us_right_side' );
+dd($right_side);
 ?>
 <div class="wcu-area-1 space-bottom">
     <div class="container">
@@ -63,25 +64,25 @@ $right_side = get_field( 'choose_us_right_side' );
                                         <div id="collapse-1" class="accordion-collapse collapse show"
                                              aria-labelledby="collapse-item-1" data-bs-parent="#faqAccordion">
                                             <div class="accordion-body">
-                                                <div class="faq-text"><?php echo apply_filters( 'the_content', $right_side['answear'] ); ?></div>
+                                                <div class="faq-text"><?php echo apply_filters( 'the_content', $question['answear'] ); ?></div>
                                             </div>
                                         </div>
                                     </div>
 								<?php else: ?>
                                     <div class="accordion-card ">
-                                        <div class="accordion-header" id="collapse-item-2">
+                                        <div class="accordion-header" id="collapse-item-<?php echo $key; ?>">
                                             <button class="accordion-button collapsed" type="button"
                                                     data-bs-toggle="collapse"
-                                                    data-bs-target="#collapse-2" aria-expanded="false"
-                                                    aria-controls="collapse-2">
+                                                    data-bs-target="#collapse-<?php echo $key; ?>" aria-expanded="false"
+                                                    aria-controls="collapse-<?php echo $key; ?>">
 	                                            <?php echo $question['question']; ?>
                                             </button>
                                         </div>
-                                        <div id="collapse-2" class="accordion-collapse collapse "
-                                             aria-labelledby="collapse-item-2"
+                                        <div id="collapse-<?php echo $key; ?>" class="accordion-collapse collapse "
+                                             aria-labelledby="collapse-item-<?php echo $key; ?>"
                                              data-bs-parent="#faqAccordion">
                                             <div class="accordion-body">
-                                                <div class="faq-text"><?php echo apply_filters( 'the_content', $right_side['answear'] ); ?></div>
+                                                <div class="faq-text"><?php echo apply_filters( 'the_content', $question['answear'] ); ?></div>
                                             </div>
                                         </div>
                                     </div>
