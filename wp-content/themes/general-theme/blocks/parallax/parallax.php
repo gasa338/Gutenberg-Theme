@@ -4,10 +4,6 @@ $allowed_blocks = array( 'acf/service-offering' );
 $background = get_field('parallax_background');
 $top_shape = get_field('parallax_top_shape');
 $bottom_shape = get_field('parallax_bottom_shape');
-
-dd($background);
-dd($top_shape);
-dd($bottom_shape);
 ?>
 
 <!--==============================
