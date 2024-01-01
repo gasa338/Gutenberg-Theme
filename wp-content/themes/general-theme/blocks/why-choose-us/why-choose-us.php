@@ -1,7 +1,6 @@
 <?php
 $left_side  = get_field( 'choose_us_left_side' );
 $right_side = get_field( 'choose_us_right_side' );
-dd($right_side);
 ?>
 <div class="wcu-area-1 space-bottom">
     <div class="container">
