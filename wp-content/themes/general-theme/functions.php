@@ -306,4 +306,3 @@ function general_block_category( $categories, $post ) {
 
 	return $categories;
 }
-
