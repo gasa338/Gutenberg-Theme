@@ -216,6 +216,16 @@ a:active, a:focus, a:hover, a:visited {
   outline: 0;
 }
 
+a.white-hover {
+  color: var(--theme-color);
+  text-decoration: none;
+  outline: 0;
+  transition: all ease 0.4s;
+}
+a.white-hover:hover {
+  color: var(--light-color);
+}
+
 button {
   transition: all ease 0.4s;
 }

@@ -50,7 +50,7 @@ switch (get_field( 'pricin_plan_1_spaces' )) {
                             </div>
                             <?php endif; ?>
                             <?php if ($section['name'] != ''): ?>
-                            <div class="pricing-card_title"><a href="<?php echo $section['name']['url']; ?>"> <?php echo $section['name']['title']; ?> </a></div>
+                            <div class="pricing-card_title"><a href="<?php echo $section['name']['url']; ?>" class="white-hover"> <?php echo $section['name']['title']; ?> </a></div>
 	                    	<?php endif; ?>
                             <?php if (!$section['format']): ?>
                             <h4 class="pricing-card_price">

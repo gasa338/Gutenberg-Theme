@@ -116,6 +116,16 @@ a {
 	}
 }
 
+a.white-hover {
+	color: $theme-color;
+	text-decoration: none;
+	outline: 0;
+	transition: all ease 0.4s;
+	&:hover {
+		color: $light-color;
+	}
+}
+
 
 button {
 	transition: all ease 0.4s;
